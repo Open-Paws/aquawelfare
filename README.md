@@ -1,38 +1,48 @@
-# Aquatic Animal Welfare Tracker 🐟🦐🐙
+# 🌊 Aquatic Animal Welfare Tracker
 
-An AI-powered tool that aggregates public data on aquatic animal farming practices, maps current welfare standards coverage by species and country, identifies gaps where no welfare standard exists, and produces structured reports highlighting the highest-impact intervention targets.
+**A next-generation, data-driven advocacy platform and strategic intelligence dashboard.**
 
-## 🎯 The Problem
+The Aquatic Animal Welfare Tracker is a full-stack Next.js web application designed to empower NGOs, policymakers, and researchers. By aggregating global aquaculture production data, analyzing legislative strictness, and deploying simulated AI/ML forecasting models, this platform transforms raw statistics into actionable, compelling campaigns to protect billions of farmed aquatic animals globally.
 
-Aquatic animals—fish, crustaceans, and cephalopods—are the most numerically farmed animals on earth with over **100+ billion** individuals slaughtered annually. Despite growing scientific consensus on their capacity for pain and suffering (sentience), they are systematically excluded from most welfare frameworks, certification schemes, and advocacy databases.
+---
 
-## 🚀 The Solution
+## 🚀 Key Features
 
-This tool addresses the aquatic welfare data gap by providing:
-1. **Comprehensive Data Aggregation**: Compiling fragmented data on species production, scientific evidence of sentience, and regulatory landscapes.
-2. **Global Welfare Mapping**: Visualizing the state of aquatic welfare legislation and certification around the world.
-3. **AI-Powered Gap Analysis**: Calculating priority scores based on a multi-factor algorithm (Production Scale, Sentience Evidence, Standards Gap, Regulatory Gap, Feasibility) to pinpoint where intervention will have the greatest impact.
-4. **Structured Report Generation**: Automatically generating detailed markdown reports based on species type, region, or production system to assist advocates and policy makers.
+*   **🌍 Interactive Choropleth Map:** A visually stunning, dynamic geographic visualizer. Entire countries are color-coded based on their Welfare Gap Scores, allowing for instant identification of high-risk regions. Built with React-Leaflet and GeoJSON.
+*   **📊 Strategic Intervention Simulator:** A "What-If" analysis engine. Toggle hypothetical policy interventions (e.g., *100% ASC Corporate Pledges* or *Legal Sentience Recognition*) to mathematically project exactly how many billions of individual animals would transition from unshielded to protected.
+*   **🧠 Advanced Intelligence (AI) Suite:**
+    *   **Predictive 2030 Forecasting:** A machine-learning style compound trajectory model highlighting the explosive growth of the aquaculture industry against stagnant legislative frameworks.
+    *   **NLP Policy Sentiment Grader:** A JavaScript-based Natural Language Processing engine that scans drafted laws or corporate pledges, punishes "loophole" vocabulary (*"should", "voluntary"*), and grades the strictness of the policy objectively from A+ to F.
+*   **⚠️ Welfare Gap Analysis Engine:** A sophisticated, multi-factor heuristic algorithm that computes an overall "Gap Score" for every species and country by weighing sentience evidence, regulatory enforcement, and certification coverage against massive production volumes.
+*   **📋 Automated PDF Reporting:** Generate and download professional, structured advocacy reports in high-quality PDF formats (via `html2pdf.js`) optimized dynamically for print layouts.
+*   **🐟 Granular Species & Country Databases:** Comprehensive profiles for 35+ species and 40+ countries utilizing updated framework metrics.
 
-## 💻 Technology Stack
+---
 
-*   **Frontend**: Next.js 14+ (App Router), React, Vanilla CSS with custom glassmorphic Dark Mode design system.
-*   **Backend**: Next.js API Routes.
-*   **AI/ML**: Custom multi-factor scoring algorithm for gap analysis, heuristic clustering for priority alignment, and AI narrative generation for reporting.
-*   **Visualizations**: Recharts (bar, pie, radar charts), React-Leaflet (interactive map), React-Markdown.
+## 🛠️ Technology Stack
 
-## 📂 Data Sources
+*   **Framework:** [Next.js 14](https://nextjs.org/) (App/Pages Router architecture)
+*   **UI Library:** [React](https://reactjs.org/)
+*   **Styling:** Custom CSS implementing a "Deep Ocean Glassmorphism" design system (Dark Mode optimized).
+*   **Geospatial Mapping:** `react-leaflet` & `leaflet`
+*   **Data Visualization:** `recharts` (Area, Radar, Bar, and Pie distributions)
+*   **PDF Generation:** `html2pdf.js`
+*   **Icons:** Emoji system & standard unicode iconography.
 
-The data compiled in this application is based on the latest available sources (2022-2024):
-*   **Production**: FAO FishStatJ 2024, SOFIA Report 2024.
-*   **Welfare Standards**: Direct analyses of ASC, BAP, GlobalGAP, RSPCA Assured, Naturland, and EU Organic certification standards.
-*   **Sentience**: Academic literature (e.g., LSE Review of Sentience in Cephalopod Molluscs and Decapod Crustaceans).
+---
 
-## 🛠️ Installation & Setup
+## ⚙️ Getting Started
+
+Follow these steps to set up and run the tracker on your local machine.
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (v16.x or newer) and `npm` installed.
+
+### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/your-username/aquatic-welfare-tracker.git
    cd aquatic-welfare-tracker
    ```
 
@@ -42,24 +52,46 @@ The data compiled in this application is based on the latest available sources (
    ```
 
 3. **Run the development server:**
+   Because Next.js caching works alongside Leaflet map imports, the project runs best with the Webpack flag active.
    ```bash
    npm run dev
+   # (This runs: next dev --webpack)
    ```
 
-4. **Open your browser:**
-   Navigate to `http://localhost:3000` to view the application.
+4. **Open the application:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🧠 AI/ML Approach
+---
 
-The core logic of the tracker is built around the **Welfare Gap Score**, a composite score ranging from 0 to 1, calculated using:
-* `P_score` (Production Scale): Normalized by maximum species production volume.
-* `S_score` (Sentience Evidence): Weighted indicator based on the strength of scientific evidence.
-* `C_score` (Standards Gap): `$1 - \text{Percentage covered by certification}$`.
-* `R_score` (Regulatory Gap): Lack of legal framework in top 5 producing countries.
-* `F_score` (Feasibility): Assessed based on existing technology and farming techniques.
+## 📂 Project Structure
 
-The algorithm dynamically re-evaluates priorities when filters (like "Crustaceans only") are applied, ensuring real-time responsive analytics.
+```text
+aquatic-welfare-tracker/
+├── app/                  # Next.js App Router (page.js, layout.js, globals.css)
+├── components/           # React Interface Components
+│   ├── AISuite.jsx       # The NLP and Forecasting ML Dashboards
+│   ├── WorldMap.jsx      # The React-Leaflet Choropleth Geographic Renderer
+│   ├── InterventionSimulator.jsx # The mathematical Gap reduction engine
+│   └── ...
+├── data/                 # The Static JSON Document Databases
+│   ├── species.js        # 35+ species metrics and sentience thresholds
+│   ├── countries.js      # Production metrics and legislative grades
+│   └── welfare-standards.js
+├── lib/                  # Core Business Logic & Algorithms
+│   ├── gap-scoring.js    # Weighted algorithms for assigning Gap Scores
+│   └── report-generator.js # Automated markdown formulation 
+├── public/               # Static assets (GeoJSON map boundaries)
+```
 
-## 🔗 Disclaimer
+---
 
-*This is a prototype built for the OpenPaws Project test. Data points provided in the `src/data` directory are simulated combinations of real-world reports and approximated metrics for demonstration purposes.*
+## 🎯 The Purpose
+
+Approximately **100+ Billion** farmed fishes and **400+ Billion** farmed crustaceans are slaughtered annually, representing the largest group of exploited animals on Earth. However, they receive the least legislative protection. 
+
+This tracking application solves the massive data-visibility problem for campaigners. By consolidating production volumes, certification coverages, and political gaps into one visceral, interactive dashboard, organizations can easily decide **where** and **how** to intervene to maximize the number of lives shielded.
+
+---
+
+## 📝 License
+This project is licensed under the MIT License. See the `LICENSE` file for details.

@@ -6,6 +6,8 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen }) 
     { id: 'species', label: 'Species Explorer', icon: '🐟' },
     { id: 'map', label: 'Global Map', icon: '🗺️' },
     { id: 'gaps', label: 'Gap Analysis', icon: '⚠️' },
+    { id: 'simulator', label: 'Simulator', icon: '🚀' },
+    { id: 'ai-suite', label: 'AI Suite', icon: '🧠' },
     { id: 'report', label: 'Reports', icon: '📋' },
   ];
 

@@ -9,6 +9,8 @@ import GapAnalysis from '../components/GapAnalysis';
 import WelfareCharts from '../components/WelfareCharts';
 import ReportPanel from '../components/ReportPanel';
 import SpeciesDetail from '../components/SpeciesDetail';
+import InterventionSimulator from '../components/InterventionSimulator';
+import AISuite from '../components/AISuite';
 import dynamic from 'next/dynamic';
 
 const WorldMap = dynamic(() => import('../components/WorldMap'), { ssr: false });
@@ -67,6 +69,8 @@ export default function Home() {
     { id: 'species', label: '🐟 Species', icon: '🐟' },
     { id: 'map', label: '🗺️ Map', icon: '🗺️' },
     { id: 'gaps', label: '⚠️ Gap Analysis', icon: '⚠️' },
+    { id: 'simulator', label: '🚀 Simulator', icon: '🚀' },
+    { id: 'ai-suite', label: '🧠 AI Suite', icon: '🧠' },
     { id: 'report', label: '📋 Report', icon: '📋' },
   ];
 
@@ -94,6 +98,8 @@ export default function Home() {
             {activeTab === 'species' && '🐟 Species Explorer'}
             {activeTab === 'map' && '🗺️ Global Welfare Map'}
             {activeTab === 'gaps' && '⚠️ Welfare Gap Analysis'}
+            {activeTab === 'simulator' && '🚀 Strategic Simulator'}
+            {activeTab === 'ai-suite' && '🧠 Advanced Intelligence'}
             {activeTab === 'report' && '📋 Intervention Report'}
           </h2>
           <p>
@@ -101,6 +107,8 @@ export default function Home() {
             {activeTab === 'species' && 'Explore welfare data for individual aquatic species'}
             {activeTab === 'map' && 'Interactive map of welfare standards coverage by country'}
             {activeTab === 'gaps' && 'AI-powered analysis identifying highest-impact intervention targets'}
+            {activeTab === 'simulator' && 'Mathematically project the impact of hypothetical campaigns and policies'}
+            {activeTab === 'ai-suite' && 'Leverage predictive 2030 forecasting and Natural Language Processing logic'}
             {activeTab === 'report' && 'Generate structured reports for advocacy and policy work'}
           </p>
         </div>
@@ -168,6 +176,17 @@ export default function Home() {
                 countriesData={countriesData}
                 filters={filters}
               />
+            )}
+
+            {activeTab === 'simulator' && (
+              <InterventionSimulator 
+                speciesData={speciesData}
+                gapsData={gapsData}
+              />
+            )}
+
+            {activeTab === 'ai-suite' && (
+              <AISuite />
             )}
 
             {activeTab === 'report' && (

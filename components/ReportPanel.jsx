@@ -25,7 +25,7 @@ export default function ReportPanel({ filters }) {
     setLoading(false);
   };
 
-  const downloadReport = () => {
+  const downloadMarkdown = () => {
     if (!report) return;
     const blob = new Blob([report], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
@@ -34,6 +34,24 @@ export default function ReportPanel({ filters }) {
     a.download = `aquatic-welfare-report-${new Date().toISOString().split('T')[0]}.md`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  const downloadPDF = async () => {
+    if (!report) return;
+    
+    // Dynamically import to avoid Next.js SSR issues
+    const html2pdf = (await import('html2pdf.js')).default;
+    const element = document.getElementById('pdf-report-content');
+    
+    const opt = {
+      margin:       [15, 15, 15, 15],
+      filename:     `aquatic-welfare-report-${new Date().toISOString().split('T')[0]}.pdf`,
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
+      jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
   };
 
   return (
@@ -66,7 +84,7 @@ export default function ReportPanel({ filters }) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: 12 }}>
+      <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
         <button 
           className="btn btn-primary" 
           onClick={generateReport} 
@@ -84,16 +102,29 @@ export default function ReportPanel({ filters }) {
         </button>
 
         {report && (
-          <button className="btn btn-secondary" onClick={downloadReport}>
-            📥 Download (.md)
-          </button>
+          <>
+            <button className="btn btn-secondary" onClick={downloadPDF} style={{ background: 'rgba(56, 189, 248, 0.1)', color: 'var(--accent-blue)', borderColor: 'var(--border-active)' }}>
+              📄 Download PDF
+            </button>
+            <button className="btn btn-secondary" onClick={downloadMarkdown}>
+              📥 Download (.md)
+            </button>
+          </>
         )}
       </div>
 
       {report && (
-        <div className="report-container animate-slide-up">
-          <ReactMarkdown>{report}</ReactMarkdown>
-        </div>
+        <>
+          <div className="report-container animate-slide-up">
+            <ReactMarkdown>{report}</ReactMarkdown>
+          </div>
+          
+          <div style={{ position: 'absolute', top: '-9999px', left: '-9999px', width: '800px' }}>
+            <div id="pdf-report-content" className="pdf-container">
+              <ReactMarkdown>{report}</ReactMarkdown>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
