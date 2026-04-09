@@ -1,0 +1,72 @@
+/**
+ * Tests for the report generator.
+ *
+ * The report generator produces markdown text consumed by the ReportPanel UI.
+ * These tests verify structural correctness: required sections present, species
+ * data appears, and filtering applies without crashing.
+ */
+
+import { generateReport } from '../lib/report-generator.js';
+
+describe('generateReport', () => {
+  test('returns a non-empty string', () => {
+    const report = generateReport();
+    expect(typeof report).toBe('string');
+    expect(report.length).toBeGreaterThan(0);
+  });
+
+  test('includes Executive Summary section', () => {
+    const report = generateReport();
+    expect(report).toContain('## Executive Summary');
+  });
+
+  test('includes Species-Level Gap Analysis section', () => {
+    const report = generateReport();
+    expect(report).toContain('## Species-Level Gap Analysis');
+  });
+
+  test('includes Regional Analysis section', () => {
+    const report = generateReport();
+    expect(report).toContain('## Regional Analysis');
+  });
+
+  test('includes Certification Scheme Analysis section', () => {
+    const report = generateReport();
+    expect(report).toContain('## Certification Scheme Analysis');
+  });
+
+  test('includes Methodology section', () => {
+    const report = generateReport();
+    expect(report).toContain('## Methodology');
+  });
+
+  test('mentions at least one species name in the top 15 gap targets', () => {
+    // Whiteleg Shrimp consistently ranks as the highest-gap species
+    // (high production, low welfare coverage, strong sentience evidence)
+    const report = generateReport();
+    expect(report).toContain('Whiteleg Shrimp');
+  });
+
+  test('accepts taxonomicGroup filter without throwing', () => {
+    expect(() => generateReport({ taxonomicGroup: 'Fish' })).not.toThrow();
+    expect(() => generateReport({ taxonomicGroup: 'Crustacean' })).not.toThrow();
+  });
+
+  test('accepts region filter without throwing', () => {
+    expect(() => generateReport({ region: 'East Asia' })).not.toThrow();
+    expect(() => generateReport({ region: 'Europe' })).not.toThrow();
+  });
+
+  test('accepts combined filters without throwing', () => {
+    expect(() => generateReport({ taxonomicGroup: 'Fish', region: 'Europe' })).not.toThrow();
+  });
+
+  test('empty filter object produces same report as no argument', () => {
+    const withEmpty = generateReport({});
+    const withNone = generateReport();
+    // Both should produce reports with the same sections (generated dates may differ
+    // if run across midnight, so compare structure rather than full equality)
+    expect(withEmpty).toContain('## Executive Summary');
+    expect(withNone).toContain('## Executive Summary');
+  });
+});

@@ -1,4 +1,4 @@
-import { countries, regions, getCountriesByRegion } from '../../../data/countries';
+import { countries, regions } from '../../../data/countries';
 import { NextResponse } from 'next/server';
 
 export async function GET(request) {

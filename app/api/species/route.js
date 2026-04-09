@@ -1,4 +1,4 @@
-import { species, getSpeciesByGroup, getSpeciesByCountry, getTaxonomicGroups } from '../../../data/species';
+import { species, getTaxonomicGroups } from '../../../data/species';
 import { NextResponse } from 'next/server';
 
 export async function GET(request) {
