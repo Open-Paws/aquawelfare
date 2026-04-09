@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/Open-Paws/no-animal-violence-pre-commit
+    rev: main
+    hooks:
+      - id: no-animal-violence
+        files: \.(js|jsx|ts|tsx|md|css)$

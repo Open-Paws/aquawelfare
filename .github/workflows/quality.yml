@@ -8,8 +8,8 @@ jobs:
       - name: Check for speciesist language
         uses: Open-Paws/no-animal-violence-action@main
         with:
-          paths: 'src/ *.md'
-  typecheck:
+          paths: 'app/ components/ data/ lib/ *.md'
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,4 +17,13 @@ jobs:
         with:
           node-version: '22'
       - run: npm ci
-      - run: npx tsc --noEmit
+      - run: npx next lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm test

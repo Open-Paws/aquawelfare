@@ -19,9 +19,9 @@ function formatLargeNumber(num) {
   return num.toLocaleString();
 }
 
-export default function InterventionSimulator({ speciesData, gapsData }) {
+export default function InterventionSimulator({ speciesData, gapsData, gapMap: gapMapProp }) {
   const [selectedSpeciesId, setSelectedSpeciesId] = useState('');
-  
+
   // Toggles for hypothetical interventions
   const [toggles, setToggles] = useState({
     corporatePledge: false, // E.g., Major buyers mandate standard coverage
@@ -38,13 +38,15 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
     }
   }, [speciesData, selectedSpeciesId]);
 
+  // Use pre-computed gapMap from page.js when available, otherwise build locally
   const baselineMap = useMemo(() => {
+    if (gapMapProp) return gapMapProp;
     const map = {};
     if (gapsData?.data) {
       gapsData.data.forEach(g => { map[g.speciesId] = g; });
     }
     return map;
-  }, [gapsData]);
+  }, [gapMapProp, gapsData]);
 
   const targetSpecies = useMemo(() => {
     return speciesData?.find(s => s.id === selectedSpeciesId);
@@ -106,7 +108,12 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
     };
   }, [targetSpecies, baselineMap, toggles]);
 
-  if (!targetSpecies || !calculation) return <div className="loading">Loading simulator data...</div>;
+  if (!speciesData || speciesData.length === 0) {
+    return <div className="loading">Loading simulator data...</div>;
+  }
+  if (!targetSpecies || !calculation) {
+    return <div style={{ padding: 32, textAlign: 'center', color: 'var(--text-muted)' }}>No species data available for the current filters.</div>;
+  }
 
   const chartData = [
     {

@@ -1,0 +1,5 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:no-animal-violence/recommended"],
+  "plugins": ["no-animal-violence"],
+  "rules": {}
+}

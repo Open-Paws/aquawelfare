@@ -10,60 +10,21 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import AISuite from '../../components/AISuite.jsx';
-
-// --- Replicate the pure function from AISuite.jsx ---
-// (Component doesn't export it, so we test it via the replicated source)
-
-const STRONG_TERMS = ['mandatory', 'must', 'required', 'prohibited', 'illegal', 'stun', 'anesthesia', 'immediately', 'enforced', 'ban', 'banned', 'strictly', 'penalty', 'law'];
-const WEAK_TERMS = ['should', 'recommended', 'where possible', 'guidelines', 'voluntary', 'suggested', 'minimize', 'try', 'encourage', 'best practice', 'consider', 'may'];
-
-function runSentimentAnalysis(text) {
-  if (!text.trim()) return null;
-
-  let score = 40;
-  let matches = { strong: [], weak: [] };
-  const lowerText = text.toLowerCase();
-
-  STRONG_TERMS.forEach(term => {
-    const rx = new RegExp(`\\b${term}\\b`, 'g');
-    const count = (lowerText.match(rx) || []).length;
-    if (count > 0) {
-      score += (12 * count);
-      matches.strong.push(term);
-    }
-  });
-
-  WEAK_TERMS.forEach(term => {
-    const rx = new RegExp(`\\b${term}\\b`, 'g');
-    const count = (lowerText.match(rx) || []).length;
-    if (count > 0) {
-      score -= (10 * count);
-      matches.weak.push(term);
-    }
-  });
-
-  score = Math.max(0, Math.min(100, score));
-
-  let grade = 'F';
-  if (score >= 95) grade = 'A+';
-  else if (score >= 85) grade = 'A';
-  else if (score >= 75) grade = 'B';
-  else if (score >= 60) grade = 'C';
-  else if (score >= 40) grade = 'D';
-
-  return { score, grade, matches };
-}
+import AISuite, { runSentimentAnalysis } from '../../components/AISuite.jsx';
 
 // --- NLP sentiment analysis logic tests ---
 
 describe('runSentimentAnalysis — return value', () => {
-  test('returns null for empty string', () => {
-    expect(runSentimentAnalysis('')).toBeNull();
+  test('returns an object with empty:true for empty string', () => {
+    const result = runSentimentAnalysis('');
+    expect(result).toHaveProperty('empty', true);
+    expect(result.score).toBe(0);
+    expect(result.grade).toBe('F');
   });
 
-  test('returns null for whitespace-only string', () => {
-    expect(runSentimentAnalysis('   ')).toBeNull();
+  test('returns an object with empty:true for whitespace-only string', () => {
+    const result = runSentimentAnalysis('   ');
+    expect(result).toHaveProperty('empty', true);
   });
 
   test('returns an object with score, grade, and matches for valid text', () => {
@@ -71,6 +32,7 @@ describe('runSentimentAnalysis — return value', () => {
     expect(result).toHaveProperty('score');
     expect(result).toHaveProperty('grade');
     expect(result).toHaveProperty('matches');
+    expect(result.empty).toBeUndefined();
   });
 });
 

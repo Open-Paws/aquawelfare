@@ -49,7 +49,7 @@ This repo is in the **Public Campaigns** bounded context. Terminology rules from
 - Welfare gap — use this term for the scoring model output, not "deficit" or "shortfall"
 - Intervention — specific policy or certification change projected in the simulator
 - Campaign — any organized advocacy effort this tool supports
-- Slaughterhouse equivalents in aquaculture: use "processing facility" when referring to kill facilities, not "harvest facility" or "processing plant" (do not use industry euphemisms)
+- Use "slaughter" and "slaughterhouse" terminology for kill facilities in aquaculture — do not use industry euphemisms like "harvest facility", "processing facility", or "processing plant"
 
 Never use speciesist language in code, comments, or variable names. Run the no-animal-violence linter before committing.
 
@@ -104,7 +104,7 @@ This tool describes suffering at scale (billions of animals). Apply progressive 
 
 ## Quality Gates
 
-- **desloppify:** Target score ≥ 85. Run `desloppify scan --path src` then `desloppify next`.
+- **desloppify:** Target score ≥ 85. Run `desloppify scan --path .` then `desloppify next`.
 - **no-animal-violence:** GitHub Action runs on every PR. Run locally with the pre-commit hook.
 - **TypeScript:** Currently JavaScript (`.js`/`.jsx`). If migrating to TypeScript, run `tsc --noEmit` before pushing.
 - **Playwright:** Use for persona-based testing of the map interaction, intervention simulator, and report download flows.

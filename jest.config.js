@@ -4,6 +4,17 @@ const config = {
     '^.+\\.jsx?$': 'babel-jest',
   },
   testPathIgnorePatterns: ['/node_modules/', '/open-paws-strategy/', '/.next/'],
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'json-summary'],
+  collectCoverageFrom: [
+    'app/**/*.{js,jsx}',
+    'components/**/*.{js,jsx}',
+    'lib/**/*.{js,jsx}',
+    'data/**/*.{js,jsx}',
+    '!**/*.test.{js,jsx}',
+    '!**/node_modules/**',
+  ],
   projects: [
     {
       displayName: 'node',

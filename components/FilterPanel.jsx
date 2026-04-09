@@ -1,12 +1,12 @@
 'use client';
 
-import { regions } from '../data/countries';
-import { productionSystems } from '../data/production-systems';
+import { regions as defaultRegions } from '../data/countries';
+import { productionSystems as defaultProductionSystems } from '../data/production-systems';
 
-export default function FilterPanel({ filters, onFilterChange }) {
+export default function FilterPanel({ filters, onFilterChange, regions: regionsProp, productionSystems: productionSystemsProp }) {
   const taxonomicGroups = ['All', 'Fish', 'Crustacean', 'Cephalopod', 'Mollusk', 'Other'];
-  const allRegions = ['All', ...regions];
-  const allSystems = ['All', ...productionSystems.map(s => s.name)];
+  const allRegions = ['All', ...(regionsProp || defaultRegions)];
+  const allSystems = ['All', ...(productionSystemsProp || defaultProductionSystems).map(s => s.name)];
 
   return (
     <div className="filter-panel">

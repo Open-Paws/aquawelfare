@@ -2,17 +2,19 @@
 
 import { useState, useMemo } from 'react';
 
-export default function SpeciesExplorer({ species, onSelect, gapsData }) {
+export default function SpeciesExplorer({ species, onSelect, gapsData, gapMap: gapMapProp }) {
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState('gap');
 
+  // Use pre-computed gapMap from page.js when available, otherwise build locally
   const gapMap = useMemo(() => {
+    if (gapMapProp) return gapMapProp;
     const map = {};
     if (gapsData?.data) {
       gapsData.data.forEach(g => { map[g.speciesId] = g; });
     }
     return map;
-  }, [gapsData]);
+  }, [gapMapProp, gapsData]);
 
   const filteredSpecies = useMemo(() => {
     let data = species || [];

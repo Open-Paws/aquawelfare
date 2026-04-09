@@ -781,7 +781,7 @@ export const species = [
   }
 ];
 
-// Utility functions
+// Lookup utilities — dataset-coupled queries that operate on the species array
 export function getSpeciesById(id) {
   return species.find(s => s.id === id);
 }
@@ -794,10 +794,6 @@ export function getSpeciesByCountry(country) {
   return species.filter(s => s.topProducers.includes(country));
 }
 
-export function getTaxonomicGroups() {
-  return [...new Set(species.map(s => s.taxonomicGroup))];
-}
-
-export function getTotalProduction() {
-  return species.reduce((sum, s) => sum + s.annualProductionTonnes, 0);
-}
+// Aggregate utilities — re-exported from lib/species-utils for backwards compatibility.
+// Prefer importing directly from lib/species-utils in new code.
+export { getTaxonomicGroups, getTotalProduction } from '../lib/species-utils';

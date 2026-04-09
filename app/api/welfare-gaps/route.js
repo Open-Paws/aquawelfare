@@ -2,35 +2,42 @@ import { calculateAllGapScores, calculateCountryGapScores, getGapSummaryStats } 
 import { NextResponse } from 'next/server';
 
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const type = searchParams.get('type') || 'species';
-  const taxonomicGroup = searchParams.get('taxonomicGroup');
-  const region = searchParams.get('region');
-  const priority = searchParams.get('priority');
-  
-  let data;
-  
-  if (type === 'countries') {
-    data = calculateCountryGapScores();
-    if (region && region !== 'All') {
-      data = data.filter(d => d.region === region);
+  try {
+    const { searchParams } = new URL(request.url);
+    const type = searchParams.get('type') || 'species';
+    const taxonomicGroup = searchParams.get('taxonomicGroup');
+    const region = searchParams.get('region');
+    const priority = searchParams.get('priority');
+
+    let data;
+
+    if (type === 'countries') {
+      data = calculateCountryGapScores();
+      if (region && region !== 'All') {
+        data = data.filter(d => d.region === region);
+      }
+    } else {
+      data = calculateAllGapScores();
+      if (taxonomicGroup && taxonomicGroup !== 'All') {
+        data = data.filter(d => d.taxonomicGroup === taxonomicGroup);
+      }
     }
-  } else {
-    data = calculateAllGapScores();
-    if (taxonomicGroup && taxonomicGroup !== 'All') {
-      data = data.filter(d => d.taxonomicGroup === taxonomicGroup);
+
+    if (priority && priority !== 'All') {
+      data = data.filter(d => d.priorityLevel === priority);
     }
+
+    const stats = getGapSummaryStats();
+
+    return NextResponse.json({
+      total: data.length,
+      stats,
+      data
+    });
+  } catch (error) {
+    return NextResponse.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
   }
-  
-  if (priority && priority !== 'All') {
-    data = data.filter(d => d.priorityLevel === priority);
-  }
-  
-  const stats = getGapSummaryStats();
-  
-  return NextResponse.json({
-    total: data.length,
-    stats,
-    data
-  });
 }
