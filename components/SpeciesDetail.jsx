@@ -3,12 +3,12 @@
 import { useMemo } from 'react';
 
 export default function SpeciesDetail({ species: s, gapsData, onClose }) {
-  if (!s) return null;
-
   const gapInfo = useMemo(() => {
-    if (!gapsData?.data) return null;
+    if (!s || !gapsData?.data) return null;
     return gapsData.data.find(g => g.speciesId === s.id);
   }, [gapsData, s]);
+
+  if (!s) return null;
 
   return (
     <div className="detail-overlay" onClick={onClose}>

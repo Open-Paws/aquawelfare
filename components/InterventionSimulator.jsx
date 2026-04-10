@@ -34,6 +34,7 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
     if (speciesData?.length > 0 && !selectedSpeciesId) {
       // Default to Whiteleg Shrimp (highest pop) or highest gap score
       const defaultSpecies = speciesData.find(s => s.id === 'whiteleg-shrimp') || speciesData[0];
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedSpeciesId(defaultSpecies.id);
     }
   }, [speciesData, selectedSpeciesId]);

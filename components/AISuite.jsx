@@ -107,7 +107,7 @@ export default function AISuite() {
           </div>
           <div className="glass-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 16 }}>
-              Paste a draft law, a corporate sourcing pledge, or an NGO standard. The NLP engine tokenizes the text, punishing "loophole" vocabulary and rewarding binding, mandatory language.
+              Paste a draft law, a corporate sourcing pledge, or an NGO standard. The NLP engine tokenizes the text, punishing &ldquo;loophole&rdquo; vocabulary and rewarding binding, mandatory language.
             </p>
             
             <label htmlFor="policy-text-input" className="sr-only">Policy text to analyze</label>
