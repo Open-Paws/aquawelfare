@@ -30,6 +30,7 @@ export async function GET(request) {
     const stats = getGapSummaryStats();
 
     return NextResponse.json({
+      success: true,
       total: data.length,
       stats,
       data

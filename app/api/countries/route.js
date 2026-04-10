@@ -14,7 +14,7 @@ export async function GET(request) {
       result = result.filter(c => c.region === region);
     }
 
-    if (hasLegislation !== null && hasLegislation !== undefined) {
+    if (hasLegislation !== null) {
       result = result.filter(c => c.regulatoryFramework.hasLegislation === (hasLegislation === 'true'));
     }
 
@@ -26,6 +26,7 @@ export async function GET(request) {
     }
 
     return NextResponse.json({
+      success: true,
       total: result.length,
       regions,
       data: result

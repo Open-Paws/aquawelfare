@@ -34,6 +34,7 @@ describe('Sidebar component', () => {
     expect(screen.getByText('Global Map')).toBeInTheDocument();
     expect(screen.getByText('Gap Analysis')).toBeInTheDocument();
     expect(screen.getByText('Simulator')).toBeInTheDocument();
+    expect(screen.getByText('AI Suite')).toBeInTheDocument();
     expect(screen.getByText('Reports')).toBeInTheDocument();
   });
 

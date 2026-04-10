@@ -24,42 +24,40 @@ afterAll(() => {
   delete global.fetch;
 });
 
-const mockCountriesData = {
-  data: [
-    {
-      id: 'china',
-      name: 'China',
-      region: 'East Asia',
-      totalAquacultureProduction: 57470000,
-      welfareScore: 0.2,
-      certifiedProductionPercent: 5,
-      regulatoryFramework: { hasLegislation: false, enforced: false },
-    },
-    {
-      id: 'norway',
-      name: 'Norway',
-      region: 'Northern Europe',
-      totalAquacultureProduction: 1400000,
-      welfareScore: 0.75,
-      certifiedProductionPercent: 60,
-      regulatoryFramework: { hasLegislation: true, enforced: true },
-    },
-  ],
-};
+const mockCountriesData = [
+  {
+    id: 'china',
+    name: 'China',
+    region: 'East Asia',
+    totalAquacultureProduction: 57470000,
+    welfareScore: 0.2,
+    certifiedProductionPercent: 5,
+    regulatoryFramework: { hasLegislation: false, enforced: false },
+  },
+  {
+    id: 'norway',
+    name: 'Norway',
+    region: 'Northern Europe',
+    totalAquacultureProduction: 1400000,
+    welfareScore: 0.75,
+    certifiedProductionPercent: 60,
+    regulatoryFramework: { hasLegislation: true, enforced: true },
+  },
+];
 
 describe('WorldMap component', () => {
-  test('renders without crashing with valid props', () => {
-    const { container } = render(<WorldMap countriesData={mockCountriesData} />);
+  test('renders without crashing with valid countries prop', () => {
+    const { container } = render(<WorldMap countries={mockCountriesData} />);
     expect(container).toBeDefined();
   });
 
-  test('renders without crashing with null countriesData', () => {
-    const { container } = render(<WorldMap countriesData={null} />);
+  test('renders without crashing with null countries prop', () => {
+    const { container } = render(<WorldMap countries={null} />);
     expect(container).toBeDefined();
   });
 
-  test('renders without crashing with empty data array', () => {
-    const { container } = render(<WorldMap countriesData={{ data: [] }} />);
+  test('renders without crashing with empty countries array', () => {
+    const { container } = render(<WorldMap countries={[]} />);
     expect(container).toBeDefined();
   });
 });

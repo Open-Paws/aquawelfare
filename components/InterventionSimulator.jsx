@@ -161,13 +161,16 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
                 </label>
 
                 {/* Toggle 1 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.corporatePledge ? 'rgba(56, 189, 248, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.corporatePledge ? 'var(--border-active)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.corporatePledge ? 'rgba(56, 189, 248, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.corporatePledge ? 'var(--border-active)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, corporatePledge: !p.corporatePledge }))}
+                  aria-pressed={toggles.corporatePledge}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.corporatePledge ? 'var(--accent-blue)' : 'var(--text-primary)' }}>100% ASC Corporate Pledge</div>
@@ -176,16 +179,19 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Major grocery buyers mandate certification, pushing standards coverage to a minimum baseline of 80%.</div>
-                </div>
+                </button>
 
                 {/* Toggle 2 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.legalSentience ? 'rgba(167, 139, 250, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.legalSentience ? 'rgba(167, 139, 250, 0.4)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.legalSentience ? 'rgba(167, 139, 250, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.legalSentience ? 'rgba(167, 139, 250, 0.4)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, legalSentience: !p.legalSentience }))}
+                  aria-pressed={toggles.legalSentience}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.legalSentience ? 'var(--accent-purple)' : 'var(--text-primary)' }}>Legal Sentience Recognition</div>
@@ -194,16 +200,19 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Top 5 producing countries legally recognize the species as sentient, cutting the regulatory gap.</div>
-                </div>
+                </button>
 
                 {/* Toggle 3 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.4)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.4)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, humaneSlaughter: !p.humaneSlaughter }))}
+                  aria-pressed={toggles.humaneSlaughter}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.humaneSlaughter ? 'var(--accent-green)' : 'var(--text-primary)' }}>Humane Slaughter Mandate</div>
@@ -212,7 +221,7 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Abolish asphyxiation, ice slurry, or live-boiling. Mandate electrical or percussive stunning dynamically lowering cruelty metrics.</div>
-                </div>
+                </button>
 
               </div>
             </div>

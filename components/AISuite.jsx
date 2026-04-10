@@ -106,7 +106,6 @@ export default function AISuite() {
               id="policy-text-input"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              aria-label="Policy text to analyze"
               placeholder="e.g. 'Farmers should attempt to minimize pain where possible. Stunning is highly recommended but voluntary due to cost...'"
               style={{
                 width: '100%', height: 160, padding: 16, borderRadius: 'var(--radius-md)',
@@ -191,7 +190,7 @@ export default function AISuite() {
           </div>
           <div className="glass-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 24 }}>
-              Machine learning projection mapping historical 5.5% CAGR growth of the aquaculture industry against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals.
+              Machine learning projection mapping historical 5.5% CAGR growth of the aquaculture industry against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals. Use the Intervention Simulator to model how policy changes could narrow this gap.
             </p>
 
             <div style={{ flex: 1, minHeight: 400 }}>

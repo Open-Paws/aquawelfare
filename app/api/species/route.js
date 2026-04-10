@@ -36,6 +36,7 @@ export async function GET(request) {
     }
 
     return NextResponse.json({
+      success: true,
       total: result.length,
       taxonomicGroups: getTaxonomicGroups(),
       data: result
