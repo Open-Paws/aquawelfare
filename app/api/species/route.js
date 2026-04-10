@@ -22,9 +22,13 @@ export async function GET(request) {
 
     if (minProduction) {
       const min = parseInt(minProduction, 10);
-      if (!isNaN(min)) {
-        result = result.filter(s => s.annualProductionTonnes >= min);
+      if (isNaN(min)) {
+        return NextResponse.json(
+          { success: false, error: 'Invalid minProduction value. Must be a numeric value.' },
+          { status: 400 }
+        );
       }
+      result = result.filter(s => s.annualProductionTonnes >= min);
     }
 
     if (search) {

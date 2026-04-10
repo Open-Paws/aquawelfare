@@ -2,8 +2,8 @@
  * Smoke tests for WorldMap component.
  *
  * WorldMap renders a Leaflet-based choropleth map of country welfare scores.
- * These tests verify it mounts without errors. Leaflet is mocked to avoid
- * browser canvas API requirements in jsdom.
+ * These tests verify it mounts without errors. global.fetch is mocked to
+ * prevent network calls to the GeoJSON file in jsdom.
  */
 
 import React from 'react';

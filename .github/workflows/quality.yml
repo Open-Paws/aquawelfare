@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check for speciesist language
-        uses: Open-Paws/no-animal-violence-action@main
+        uses: Open-Paws/no-animal-violence-action@5a86f0a19849c5ee8b5f8c576eb130d01abba522
         with:
           paths: '**/*.{js,ts,jsx,tsx,md}'
   lint:
@@ -38,6 +38,8 @@ jobs:
           node-version: '22'
       - run: npm ci
       - name: Install desloppify
-        run: pip install "git+https://github.com/Open-Paws/desloppify.git#egg=desloppify[full]"
+        run: pip install "git+https://github.com/Open-Paws/desloppify.git@4f707833507f479dc3d2576f2f5402040a66ac2d#egg=desloppify[full]"
       - name: Run quality scan (threshold ≥85)
         run: desloppify scan --path . --min-score 85
+      - name: Run Next.js quality checks
+        run: desloppify next

@@ -141,11 +141,12 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <div className="glass-card">
             <div className="glass-card-body">
-              <label style={{ display: 'block', fontSize: 12, color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>
+              <label htmlFor="target-species-select" style={{ display: 'block', fontSize: 12, color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>
                 Target Species
               </label>
-              <select 
-                className="filter-select" 
+              <select
+                id="target-species-select"
+                className="filter-select"
                 style={{ width: '100%', marginBottom: 20 }}
                 value={selectedSpeciesId}
                 onChange={e => setSelectedSpeciesId(e.target.value)}

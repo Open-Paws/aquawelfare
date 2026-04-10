@@ -187,7 +187,7 @@ export default function AISuite() {
           </div>
         </div>
 
-        {/* RIGHT PANE: Predictive ML Chart */}
+        {/* RIGHT PANE: 2030 Trajectory Forecast */}
         <div className="glass-card" style={{ display: 'flex', flexDirection: 'column' }}>
           <div className="glass-card-header">
              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
