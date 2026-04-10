@@ -204,3 +204,55 @@ describe('getGapsByPriority', () => {
     });
   });
 });
+
+// --- interventionFeasibility branch coverage ---
+
+describe('calculateGapScore feasibility branches', () => {
+  const baseSpecies = {
+    id: 'test-base',
+    commonName: 'Test Species',
+    taxonomicGroup: 'Mollusc',
+    annualProductionTonnes: 50000,
+    sentienceScore: 0.5,
+    welfareStandardsCoverage: 0.5,
+    topProducers: [],
+    certificationSchemes: [],
+    researchCitations: [],
+  };
+
+  test('FEASIBILITY_CERT_BONUS: species with certificationSchemes has higher feasibility than one without', () => {
+    const withCert = { ...baseSpecies, certificationSchemes: ['ASC'] };
+    const withoutCert = { ...baseSpecies, certificationSchemes: [] };
+
+    const withResult = calculateGapScore(withCert);
+    const withoutResult = calculateGapScore(withoutCert);
+
+    expect(withResult.components.interventionFeasibility).toBeGreaterThan(
+      withoutResult.components.interventionFeasibility
+    );
+  });
+
+  test('FEASIBILITY_CRUSTACEAN_BONUS: Crustacean has higher feasibility than Mollusc (same base)', () => {
+    const crustacean = { ...baseSpecies, taxonomicGroup: 'Crustacean' };
+    const mollusc = { ...baseSpecies, taxonomicGroup: 'Mollusc' };
+
+    const crustaceanResult = calculateGapScore(crustacean);
+    const molluscResult = calculateGapScore(mollusc);
+
+    expect(crustaceanResult.components.interventionFeasibility).toBeGreaterThan(
+      molluscResult.components.interventionFeasibility
+    );
+  });
+
+  test('FEASIBILITY_SCALE_BONUS: species above scale threshold has higher feasibility than one below', () => {
+    const aboveThreshold = { ...baseSpecies, annualProductionTonnes: 100001 };
+    const belowThreshold = { ...baseSpecies, annualProductionTonnes: 100000 };
+
+    const aboveResult = calculateGapScore(aboveThreshold);
+    const belowResult = calculateGapScore(belowThreshold);
+
+    expect(aboveResult.components.interventionFeasibility).toBeGreaterThan(
+      belowResult.components.interventionFeasibility
+    );
+  });
+});

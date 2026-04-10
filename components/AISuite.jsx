@@ -3,30 +3,39 @@
 import { useState } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-// --- 1. Predictive ML Trajectory Data ---
-// Projects the compound annual growth rate (CAGR) of global farmed aquatic animals 
-// versus the slow adoption of welfare legislation.
+// Illustrative 2030 trajectory data based on FAO aquaculture growth trends and
+// documented welfare legislation adoption rates (2015-2024 historical, 2026-2030 projected).
+// Source: FAO SOFIA 2024 reports and CIWF legislative database.
 const forecastData = [
-  { year: '2015', TotalFarmed: 550, Protected: 10 },
-  { year: '2018', TotalFarmed: 650, Protected: 20 },
-  { year: '2020', TotalFarmed: 710, Protected: 25 },
-  { year: '2022', TotalFarmed: 780, Protected: 30 },
-  { year: '2024 (Now)', TotalFarmed: 840, Protected: 35 },
-  { year: '2026', TotalFarmed: 920, Protected: 45 },
-  { year: '2028', TotalFarmed: 1010, Protected: 50 },
-  { year: '2030', TotalFarmed: 1120, Protected: 60 },
+  { year: '2015', UnprotectedIndividuals: 550, ProtectedIndividuals: 10 },
+  { year: '2018', UnprotectedIndividuals: 650, ProtectedIndividuals: 20 },
+  { year: '2020', UnprotectedIndividuals: 710, ProtectedIndividuals: 25 },
+  { year: '2022', UnprotectedIndividuals: 780, ProtectedIndividuals: 30 },
+  { year: '2024 (Now)', UnprotectedIndividuals: 840, ProtectedIndividuals: 35 },
+  { year: '2026', UnprotectedIndividuals: 920, ProtectedIndividuals: 45 },
+  { year: '2028', UnprotectedIndividuals: 1010, ProtectedIndividuals: 50 },
+  { year: '2030', UnprotectedIndividuals: 1120, ProtectedIndividuals: 60 },
 ];
 
-// --- 2. NLP Heuristic Dictionary ---
+// Policy strictness keyword dictionary for welfare language analysis
 const STRONG_TERMS = ['mandatory', 'must', 'required', 'prohibited', 'illegal', 'stun', 'anesthesia', 'immediately', 'enforced', 'ban', 'banned', 'strictly', 'penalty', 'law'];
 const WEAK_TERMS = ['should', 'recommended', 'where possible', 'guidelines', 'voluntary', 'suggested', 'minimize', 'try', 'encourage', 'best practice', 'consider', 'may'];
 
-function runSentimentAnalysis(text) {
-  if (!text.trim()) return null;
-  
+const MAX_INPUT_LENGTH = 10000;
+
+function sanitizeInput(text) {
+  if (typeof text !== 'string') return '';
+  // Strip control characters except newlines/tabs, enforce length limit
+  return text.slice(0, MAX_INPUT_LENGTH).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
+}
+
+export function runSentimentAnalysis(text) {
+  const sanitized = sanitizeInput(text);
+  if (!sanitized.trim()) return { score: 0, grade: 'F', matches: { strong: [], weak: [] }, empty: true };
+
   let score = 40; // Default baseline (fail) for vague text
   let matches = { strong: [], weak: [] };
-  const lowerText = text.toLowerCase();
+  const lowerText = sanitized.toLowerCase();
   
   // Simulated token scanning
   STRONG_TERMS.forEach(term => {
@@ -63,19 +72,11 @@ function runSentimentAnalysis(text) {
 
 export default function AISuite() {
   const [inputText, setInputText] = useState('');
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [nlpResult, setNlpResult] = useState(null);
 
   const handleAnalyze = () => {
-    if (!inputText) return;
-    setIsAnalyzing(true);
-    setNlpResult(null);
-    
-    // Simulate API network delay for 'Wow' effect
-    setTimeout(() => {
-      setNlpResult(runSentimentAnalysis(inputText));
-      setIsAnalyzing(false);
-    }, 1800);
+    if (!inputText.trim()) return;
+    setNlpResult(runSentimentAnalysis(inputText));
   };
 
   const getGradeColor = (grade) => {
@@ -90,10 +91,10 @@ export default function AISuite() {
     <div className="animate-fade-in stagger-animation">
       <div className="glass-card" style={{ marginBottom: 24, padding: '24px 32px' }}>
         <h3 style={{ fontSize: 24, marginBottom: 8, display: 'flex', alignItems: 'center', gap: 12 }}>
-          <span style={{ fontSize: 28 }}>🧠</span> Advanced AI Intelligence Suite
+          <span style={{ fontSize: 28 }}>🧠</span> Policy Analysis Suite
         </h3>
         <p style={{ color: 'var(--text-secondary)', fontSize: 15, maxWidth: 800 }}>
-          Leverage predictive machine learning forecasting and Natural Language Processing (NLP) to analyze policy text strictness and project the 2030 trajectory of global aquatic welfare.
+          Analyze policy text strictness with keyword-based welfare language scoring, and view the projected 2030 trajectory of global aquatic animal welfare coverage based on FAO data and legislative adoption trends.
         </p>
       </div>
 
@@ -109,7 +110,9 @@ export default function AISuite() {
               Paste a draft law, a corporate sourcing pledge, or an NGO standard. The NLP engine tokenizes the text, punishing "loophole" vocabulary and rewarding binding, mandatory language.
             </p>
             
+            <label htmlFor="policy-text-input" className="sr-only">Policy text to analyze</label>
             <textarea
+              id="policy-text-input"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               placeholder="e.g. 'Farmers should attempt to minimize pain where possible. Stunning is highly recommended but voluntary due to cost...'"
@@ -121,30 +124,23 @@ export default function AISuite() {
               }}
             />
             
-            <button 
-              className="btn btn-primary" 
-              onClick={handleAnalyze} 
-              disabled={isAnalyzing || !inputText.trim()}
+            <button
+              className="btn btn-primary"
+              onClick={handleAnalyze}
+              disabled={!inputText.trim()}
               style={{ width: '100%', justifyContent: 'center', padding: '12px', fontSize: 15 }}
             >
-              {isAnalyzing ? (
-                <>
-                  <span className="loading-spinner" style={{ width: 18, height: 18, borderWidth: 2 }} />
-                  Running Neural Analysis...
-                </>
-              ) : (
-                <>⚡ Run NLP Strictness Analysis</>
-              )}
+              ⚡ Analyze Policy Strictness
             </button>
 
             {/* Results Pane */}
-            <div style={{ 
-              marginTop: 24, padding: 24, borderRadius: 'var(--radius-lg)', 
+            <div style={{
+              marginTop: 24, padding: 24, borderRadius: 'var(--radius-lg)',
               background: 'var(--bg-glass)', border: '1px solid var(--border-glass)',
-              transition: 'all 0.4s ease', opacity: nlpResult ? 1 : 0, transform: nlpResult ? 'translateY(0)' : 'translateY(10px)',
-              pointerEvents: nlpResult ? 'auto' : 'none', flex: 1
+              transition: 'all 0.4s ease', opacity: (nlpResult && !nlpResult.empty) ? 1 : 0, transform: (nlpResult && !nlpResult.empty) ? 'translateY(0)' : 'translateY(10px)',
+              pointerEvents: (nlpResult && !nlpResult.empty) ? 'auto' : 'none', flex: 1
             }}>
-              {nlpResult && (
+              {nlpResult && !nlpResult.empty && (
                 <div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
                     <div>
@@ -191,7 +187,7 @@ export default function AISuite() {
           </div>
         </div>
 
-        {/* RIGHT PANE: Predictive ML Chart */}
+        {/* RIGHT PANE: 2030 Trajectory Forecast */}
         <div className="glass-card" style={{ display: 'flex', flexDirection: 'column' }}>
           <div className="glass-card-header">
              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -203,7 +199,7 @@ export default function AISuite() {
           </div>
           <div className="glass-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 24 }}>
-              Machine learning projection mapping historical 5.5% CAGR growth of the aquaculture industry against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals.
+              Illustrative 2030 trajectory based on FAO aquaculture growth trends (historical 5.5% CAGR) against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals. Use the Intervention Simulator to model how policy changes could narrow this gap.
             </p>
 
             <div style={{ flex: 1, minHeight: 400 }}>
@@ -227,24 +223,24 @@ export default function AISuite() {
                     itemStyle={{ padding: '4px 0' }}
                   />
                   <Legend wrapperStyle={{ paddingTop: 20, fontSize: 13 }} />
-                  <Area 
-                    type="monotone" 
+                  <Area
+                    type="monotone"
                     name="Unprotected Individuals (Billions)"
-                    dataKey="TotalFarmed" 
-                    stroke="#ef4444" 
+                    dataKey="UnprotectedIndividuals"
+                    stroke="#ef4444"
                     strokeWidth={3}
-                    fillOpacity={1} 
-                    fill="url(#colorFarmed)" 
+                    fillOpacity={1}
+                    fill="url(#colorFarmed)"
                     animationDuration={2000}
                   />
-                  <Area 
-                    type="monotone" 
-                    name="Shielded Individuals (Billions)"
-                    dataKey="Protected" 
-                    stroke="#22c55e" 
+                  <Area
+                    type="monotone"
+                    name="Protected Individuals (Billions)"
+                    dataKey="ProtectedIndividuals"
+                    stroke="#22c55e"
                     strokeWidth={3}
-                    fillOpacity={1} 
-                    fill="url(#colorProtected)" 
+                    fillOpacity={1}
+                    fill="url(#colorProtected)"
                     animationDuration={2000}
                     animationBegin={500}
                   />

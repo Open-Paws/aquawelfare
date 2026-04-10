@@ -19,9 +19,9 @@ function formatLargeNumber(num) {
   return num.toLocaleString();
 }
 
-export default function InterventionSimulator({ speciesData, gapsData }) {
+export default function InterventionSimulator({ speciesData, gapsData, gapMap: gapMapProp }) {
   const [selectedSpeciesId, setSelectedSpeciesId] = useState('');
-  
+
   // Toggles for hypothetical interventions
   const [toggles, setToggles] = useState({
     corporatePledge: false, // E.g., Major buyers mandate standard coverage
@@ -38,13 +38,15 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
     }
   }, [speciesData, selectedSpeciesId]);
 
+  // Use pre-computed gapMap from page.js when available, otherwise build locally
   const baselineMap = useMemo(() => {
+    if (gapMapProp) return gapMapProp;
     const map = {};
     if (gapsData?.data) {
       gapsData.data.forEach(g => { map[g.speciesId] = g; });
     }
     return map;
-  }, [gapsData]);
+  }, [gapMapProp, gapsData]);
 
   const targetSpecies = useMemo(() => {
     return speciesData?.find(s => s.id === selectedSpeciesId);
@@ -106,7 +108,12 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
     };
   }, [targetSpecies, baselineMap, toggles]);
 
-  if (!targetSpecies || !calculation) return <div className="loading">Loading simulator data...</div>;
+  if (!speciesData || speciesData.length === 0) {
+    return <div className="loading" role="status">Loading simulator data...</div>;
+  }
+  if (!targetSpecies || !calculation) {
+    return <div role="alert" style={{ padding: 32, textAlign: 'center', color: 'var(--text-muted)' }}>No species data available for the current filters.</div>;
+  }
 
   const chartData = [
     {
@@ -134,11 +141,12 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <div className="glass-card">
             <div className="glass-card-body">
-              <label style={{ display: 'block', fontSize: 12, color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>
+              <label htmlFor="target-species-select" style={{ display: 'block', fontSize: 12, color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>
                 Target Species
               </label>
-              <select 
-                className="filter-select" 
+              <select
+                id="target-species-select"
+                className="filter-select"
                 style={{ width: '100%', marginBottom: 20 }}
                 value={selectedSpeciesId}
                 onChange={e => setSelectedSpeciesId(e.target.value)}
@@ -154,13 +162,16 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
                 </label>
 
                 {/* Toggle 1 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.corporatePledge ? 'rgba(56, 189, 248, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.corporatePledge ? 'var(--border-active)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.corporatePledge ? 'rgba(56, 189, 248, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.corporatePledge ? 'var(--border-active)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, corporatePledge: !p.corporatePledge }))}
+                  aria-pressed={toggles.corporatePledge}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.corporatePledge ? 'var(--accent-blue)' : 'var(--text-primary)' }}>100% ASC Corporate Pledge</div>
@@ -169,16 +180,19 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Major grocery buyers mandate certification, pushing standards coverage to a minimum baseline of 80%.</div>
-                </div>
+                </button>
 
                 {/* Toggle 2 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.legalSentience ? 'rgba(167, 139, 250, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.legalSentience ? 'rgba(167, 139, 250, 0.4)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.legalSentience ? 'rgba(167, 139, 250, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.legalSentience ? 'rgba(167, 139, 250, 0.4)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, legalSentience: !p.legalSentience }))}
+                  aria-pressed={toggles.legalSentience}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.legalSentience ? 'var(--accent-purple)' : 'var(--text-primary)' }}>Legal Sentience Recognition</div>
@@ -187,16 +201,19 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Top 5 producing countries legally recognize the species as sentient, cutting the regulatory gap.</div>
-                </div>
+                </button>
 
                 {/* Toggle 3 */}
-                <div 
-                  style={{ 
+                <button
+                  type="button"
+                  style={{
                     padding: 16, borderRadius: 'var(--radius-sm)', cursor: 'pointer', transition: 'all 0.2s',
-                    background: toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.1)' : 'var(--bg-glass)',
-                    border: `1px solid ${toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.4)' : 'var(--border-glass)'}`
+                    width: '100%', textAlign: 'left', background: toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.1)' : 'var(--bg-glass)',
+                    outline: `1px solid ${toggles.humaneSlaughter ? 'rgba(74, 222, 128, 0.4)' : 'var(--border-glass)'}`,
+                    border: 'none'
                   }}
                   onClick={() => setToggles(p => ({ ...p, humaneSlaughter: !p.humaneSlaughter }))}
+                  aria-pressed={toggles.humaneSlaughter}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
                     <div style={{ fontWeight: 600, color: toggles.humaneSlaughter ? 'var(--accent-green)' : 'var(--text-primary)' }}>Humane Slaughter Mandate</div>
@@ -205,7 +222,7 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
                     </div>
                   </div>
                   <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Abolish asphyxiation, ice slurry, or live-boiling. Mandate electrical or percussive stunning dynamically lowering cruelty metrics.</div>
-                </div>
+                </button>
 
               </div>
             </div>
@@ -244,7 +261,7 @@ export default function InterventionSimulator({ speciesData, gapsData }) {
             </div>
           </div>
 
-          {/* Bar Chart Comparsion */}
+          {/* Bar Chart Comparison */}
           <div className="glass-card flex-1">
             <div className="glass-card-header">
               <h3 style={{ fontSize: 15 }}>📊 Gap Score Status Comparison</h3>

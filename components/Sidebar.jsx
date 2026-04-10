@@ -25,17 +25,18 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen }) 
 
       <nav className="sidebar-nav">
         {navItems.map(item => (
-          <div
+          <button
             key={item.id}
             className={`nav-item ${activeTab === item.id ? 'active' : ''}`}
             onClick={() => {
               setActiveTab(item.id);
               setIsOpen(false);
             }}
+            aria-current={activeTab === item.id ? 'page' : undefined}
           >
-            <span>{item.icon}</span>
+            <span aria-hidden="true">{item.icon}</span>
             <span>{item.label}</span>
-          </div>
+          </button>
         ))}
       </nav>
 

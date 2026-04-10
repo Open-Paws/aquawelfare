@@ -31,7 +31,7 @@ export default function SpeciesDetail({ species: s, gapsData, onClose }) {
               </div>
             </div>
           </div>
-          <button className="detail-panel-close" onClick={onClose}>✕</button>
+          <button className="detail-panel-close" onClick={onClose} aria-label="Close species detail panel">✕</button>
         </div>
 
         {/* Key Metrics */}
