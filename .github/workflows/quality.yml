@@ -42,6 +42,22 @@ jobs:
           git clone --no-recurse-submodules https://github.com/Open-Paws/desloppify.git /tmp/desloppify
           pip install "/tmp/desloppify[full]"
       - name: Run quality scan (threshold ≥85)
-        run: desloppify scan --path . --min-score 85
+        run: |
+          SCAN_OUTPUT=$(desloppify scan --path . --profile ci --no-badge 2>&1)
+          echo "${SCAN_OUTPUT}"
+          SCORE=$(echo "${SCAN_OUTPUT}" | grep -oP 'objective \K[\d.]+(?=/100)')
+          if [ -z "${SCORE}" ]; then
+            echo "ERROR: could not extract objective score from desloppify output"
+            exit 1
+          fi
+          echo "Objective score: ${SCORE}/100"
+          python3 -c "
+          score = float('${SCORE}')
+          threshold = 85
+          if score < threshold:
+              print(f'FAIL: objective score {score} is below the minimum {threshold}')
+              raise SystemExit(1)
+          print(f'PASS: objective score {score} >= {threshold}')
+          "
       - name: Run Next.js quality checks
         run: desloppify next
