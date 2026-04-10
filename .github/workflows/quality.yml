@@ -38,7 +38,7 @@ jobs:
           node-version: '22'
       - run: npm ci
       - name: Install desloppify
-        run: pip install "git+https://github.com/Open-Paws/desloppify.git@4f707833507f479dc3d2576f2f5402040a66ac2d#egg=desloppify[full]"
+        run: pip install "desloppify[full] @ git+https://github.com/Open-Paws/desloppify.git@4f707833507f479dc3d2576f2f5402040a66ac2d"
       - name: Run quality scan (threshold ≥85)
         run: desloppify scan --path . --min-score 85
       - name: Run Next.js quality checks
