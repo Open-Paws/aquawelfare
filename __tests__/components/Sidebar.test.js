@@ -38,16 +38,19 @@ describe('Sidebar component', () => {
     expect(screen.getByText('Reports')).toBeInTheDocument();
   });
 
-  test('active nav item has active class', () => {
+  test('active nav item has active class, correct label, and aria-current="page"', () => {
     const { container } = render(<Sidebar {...defaultProps} activeTab="species" />);
     const activeItems = container.querySelectorAll('.nav-item.active');
     expect(activeItems).toHaveLength(1);
+    expect(activeItems[0]).toHaveTextContent('Species Explorer');
+    expect(activeItems[0]).toHaveAttribute('aria-current', 'page');
   });
 
   test('clicking a nav item calls setActiveTab with correct id', () => {
     const setActiveTab = jest.fn();
     render(<Sidebar {...defaultProps} setActiveTab={setActiveTab} />);
     fireEvent.click(screen.getByText('Species Explorer'));
+    expect(setActiveTab).toHaveBeenCalledTimes(1);
     expect(setActiveTab).toHaveBeenCalledWith('species');
   });
 
@@ -55,6 +58,7 @@ describe('Sidebar component', () => {
     const setIsOpen = jest.fn();
     render(<Sidebar {...defaultProps} setIsOpen={setIsOpen} />);
     fireEvent.click(screen.getByText('Dashboard'));
+    expect(setIsOpen).toHaveBeenCalledTimes(1);
     expect(setIsOpen).toHaveBeenCalledWith(false);
   });
 

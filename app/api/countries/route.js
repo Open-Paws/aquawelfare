@@ -15,6 +15,12 @@ export async function GET(request) {
     }
 
     if (hasLegislation !== null) {
+      if (hasLegislation !== 'true' && hasLegislation !== 'false') {
+        return NextResponse.json(
+          { success: false, error: 'Invalid hasLegislation value. Must be "true" or "false".' },
+          { status: 400 }
+        );
+      }
       result = result.filter(c => c.regulatoryFramework.hasLegislation === (hasLegislation === 'true'));
     }
 

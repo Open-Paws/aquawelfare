@@ -42,8 +42,9 @@ export async function GET(request) {
       data: result
     });
   } catch (error) {
+    console.error('Species API error:', error);
     return NextResponse.json(
-      { success: false, error: error.message },
+      { success: false, error: 'Internal server error' },
       { status: 500 }
     );
   }

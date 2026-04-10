@@ -21,12 +21,21 @@ const forecastData = [
 const STRONG_TERMS = ['mandatory', 'must', 'required', 'prohibited', 'illegal', 'stun', 'anesthesia', 'immediately', 'enforced', 'ban', 'banned', 'strictly', 'penalty', 'law'];
 const WEAK_TERMS = ['should', 'recommended', 'where possible', 'guidelines', 'voluntary', 'suggested', 'minimize', 'try', 'encourage', 'best practice', 'consider', 'may'];
 
+const MAX_INPUT_LENGTH = 10000;
+
+function sanitizeInput(text) {
+  if (typeof text !== 'string') return '';
+  // Strip control characters except newlines/tabs, enforce length limit
+  return text.slice(0, MAX_INPUT_LENGTH).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
+}
+
 export function runSentimentAnalysis(text) {
-  if (!text.trim()) return { score: 0, grade: 'F', matches: { strong: [], weak: [] }, empty: true };
-  
+  const sanitized = sanitizeInput(text);
+  if (!sanitized.trim()) return { score: 0, grade: 'F', matches: { strong: [], weak: [] }, empty: true };
+
   let score = 40; // Default baseline (fail) for vague text
   let matches = { strong: [], weak: [] };
-  const lowerText = text.toLowerCase();
+  const lowerText = sanitized.toLowerCase();
   
   // Simulated token scanning
   STRONG_TERMS.forEach(term => {
@@ -66,7 +75,7 @@ export default function AISuite() {
   const [nlpResult, setNlpResult] = useState(null);
 
   const handleAnalyze = () => {
-    if (!inputText) return;
+    if (!inputText.trim()) return;
     setNlpResult(runSentimentAnalysis(inputText));
   };
 
@@ -190,7 +199,7 @@ export default function AISuite() {
           </div>
           <div className="glass-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
             <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 24 }}>
-              Machine learning projection mapping historical 5.5% CAGR growth of the aquaculture industry against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals. Use the Intervention Simulator to model how policy changes could narrow this gap.
+              Illustrative 2030 trajectory based on FAO aquaculture growth trends (historical 5.5% CAGR) against the nearly stagnant acceleration of political animal welfare protections globally. Y-Axis represents Billions of Individuals. Use the Intervention Simulator to model how policy changes could narrow this gap.
             </p>
 
             <div style={{ flex: 1, minHeight: 400 }}>

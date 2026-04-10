@@ -237,10 +237,10 @@ describe('calculateGapScore feasibility branches', () => {
     const mollusc = { ...baseSpecies, taxonomicGroup: 'Mollusc' };
 
     const crustaceanResult = calculateGapScore(crustacean);
-    const mollusceResult = calculateGapScore(mollusc);
+    const molluscResult = calculateGapScore(mollusc);
 
     expect(crustaceanResult.components.interventionFeasibility).toBeGreaterThan(
-      mollusceResult.components.interventionFeasibility
+      molluscResult.components.interventionFeasibility
     );
   });
 

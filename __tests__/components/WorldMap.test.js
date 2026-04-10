@@ -12,7 +12,9 @@ import '@testing-library/jest-dom';
 import WorldMap from '../../components/WorldMap.jsx';
 
 // WorldMap fetches GeoJSON from the public directory — mock fetch for jsdom
+let originalFetch;
 beforeAll(() => {
+  originalFetch = global.fetch;
   global.fetch = jest.fn(() =>
     Promise.resolve({
       json: () => Promise.resolve({ type: 'FeatureCollection', features: [] }),
@@ -21,7 +23,7 @@ beforeAll(() => {
 });
 
 afterAll(() => {
-  delete global.fetch;
+  global.fetch = originalFetch;
 });
 
 const mockCountriesData = [

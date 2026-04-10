@@ -78,7 +78,7 @@ describe('generateReport', () => {
 
   test('uses "farmed aquatic animals" terminology in executive summary', () => {
     const report = generateReport();
-    expect(report).toContain('farmed aquatic animals');
+    expect(report).toContain('species of farmed aquatic animals');
     expect(report).not.toContain('aquatic species farmed in');
   });
 

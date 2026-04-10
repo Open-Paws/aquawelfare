@@ -109,10 +109,10 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
   }, [targetSpecies, baselineMap, toggles]);
 
   if (!speciesData || speciesData.length === 0) {
-    return <div className="loading">Loading simulator data...</div>;
+    return <div className="loading" role="status">Loading simulator data...</div>;
   }
   if (!targetSpecies || !calculation) {
-    return <div style={{ padding: 32, textAlign: 'center', color: 'var(--text-muted)' }}>No species data available for the current filters.</div>;
+    return <div role="alert" style={{ padding: 32, textAlign: 'center', color: 'var(--text-muted)' }}>No species data available for the current filters.</div>;
   }
 
   const chartData = [
@@ -260,7 +260,7 @@ export default function InterventionSimulator({ speciesData, gapsData, gapMap: g
             </div>
           </div>
 
-          {/* Bar Chart Comparsion */}
+          {/* Bar Chart Comparison */}
           <div className="glass-card flex-1">
             <div className="glass-card-header">
               <h3 style={{ fontSize: 15 }}>📊 Gap Score Status Comparison</h3>
