@@ -1,0 +1,671 @@
+{
+  "version": 8,
+  "created": "2026-04-12T07:43:34+00:00",
+  "updated": "2026-04-12T07:58:38+00:00",
+  "queue_order": [
+    "workflow::create-plan",
+    "subjective::abstraction_fitness",
+    "subjective::design_coherence",
+    "subjective::logic_clarity",
+    "subjective::advocacy_security_posture",
+    "subjective::advocacy_tool_integration",
+    "subjective::ai_generated_debt",
+    "subjective::authorization_consistency",
+    "subjective::contract_coherence",
+    "subjective::error_consistency",
+    "subjective::mid_level_elegance",
+    "subjective::test_strategy",
+    "subjective::type_safety",
+    "unused::__tests__/components/AISuite.test.js::unused_import::10::React",
+    "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React",
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React",
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen",
+    "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React",
+    "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React",
+    "unused::__tests__/components/Sidebar.test.js::unused_import::8::React",
+    "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React",
+    "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React",
+    "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React",
+    "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React",
+    "unused::__tests__/components/WorldMap.test.js::unused_import::9::React"
+  ],
+  "deferred": [],
+  "skipped": {},
+  "active_cluster": null,
+  "overrides": {
+    "subjective::abstraction_fitness": {
+      "issue_id": "subjective::abstraction_fitness",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": "auto/stale-review",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_data_sovereignty": {
+      "issue_id": "subjective::advocacy_data_sovereignty",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_language_quality": {
+      "issue_id": "subjective::advocacy_language_quality",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_security_posture": {
+      "issue_id": "subjective::advocacy_security_posture",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_terminology_consistency": {
+      "issue_id": "subjective::advocacy_terminology_consistency",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_tool_integration": {
+      "issue_id": "subjective::advocacy_tool_integration",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::advocacy_ux_inclusivity": {
+      "issue_id": "subjective::advocacy_ux_inclusivity",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::ai_generated_debt": {
+      "issue_id": "subjective::ai_generated_debt",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::api_surface_coherence": {
+      "issue_id": "subjective::api_surface_coherence",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::authorization_consistency": {
+      "issue_id": "subjective::authorization_consistency",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::contract_coherence": {
+      "issue_id": "subjective::contract_coherence",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::convention_outlier": {
+      "issue_id": "subjective::convention_outlier",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::cross_module_architecture": {
+      "issue_id": "subjective::cross_module_architecture",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::dependency_health": {
+      "issue_id": "subjective::dependency_health",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::design_coherence": {
+      "issue_id": "subjective::design_coherence",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": "auto/stale-review",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::error_consistency": {
+      "issue_id": "subjective::error_consistency",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::high_level_elegance": {
+      "issue_id": "subjective::high_level_elegance",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::incomplete_migration": {
+      "issue_id": "subjective::incomplete_migration",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::initialization_coupling": {
+      "issue_id": "subjective::initialization_coupling",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::logic_clarity": {
+      "issue_id": "subjective::logic_clarity",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": "auto/stale-review",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::low_level_elegance": {
+      "issue_id": "subjective::low_level_elegance",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::mid_level_elegance": {
+      "issue_id": "subjective::mid_level_elegance",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::naming_quality": {
+      "issue_id": "subjective::naming_quality",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::package_organization": {
+      "issue_id": "subjective::package_organization",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::test_strategy": {
+      "issue_id": "subjective::test_strategy",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "subjective::type_safety": {
+      "issue_id": "subjective::type_safety",
+      "created_at": "2026-04-12T07:43:34+00:00",
+      "cluster": null,
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/AISuite.test.js::unused_import::10::React": {
+      "issue_id": "unused::__tests__/components/AISuite.test.js::unused_import::10::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen": {
+      "issue_id": "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/Sidebar.test.js::unused_import::8::React": {
+      "issue_id": "unused::__tests__/components/Sidebar.test.js::unused_import::8::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React": {
+      "issue_id": "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "unused::__tests__/components/WorldMap.test.js::unused_import::9::React": {
+      "issue_id": "unused::__tests__/components/WorldMap.test.js::unused_import::9::React",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/unused",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/api/countries/route.js::untested_module": {
+      "issue_id": "test_coverage::app/api/countries/route.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/api/welfare-gaps/route.js::untested_module": {
+      "issue_id": "test_coverage::app/api/welfare-gaps/route.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/StatsOverview.jsx::untested_module": {
+      "issue_id": "test_coverage::components/StatsOverview.jsx::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/layout.js::untested_module": {
+      "issue_id": "test_coverage::app/layout.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::lib/report-generator.js::untested_module": {
+      "issue_id": "test_coverage::lib/report-generator.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::lib/gap-scoring.js::untested_module": {
+      "issue_id": "test_coverage::lib/gap-scoring.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/FilterPanel.jsx::untested_module": {
+      "issue_id": "test_coverage::components/FilterPanel.jsx::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::lib/species-utils.js::untested_module": {
+      "issue_id": "test_coverage::lib/species-utils.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/Sidebar.jsx::untested_module": {
+      "issue_id": "test_coverage::components/Sidebar.jsx::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::data/production-systems.js::untested_module": {
+      "issue_id": "test_coverage::data/production-systems.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::data/species.js::untested_module": {
+      "issue_id": "test_coverage::data/species.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/api/species/route.js::untested_module": {
+      "issue_id": "test_coverage::app/api/species/route.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/api/reports/route.js::untested_module": {
+      "issue_id": "test_coverage::app/api/reports/route.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::data/countries.js::untested_module": {
+      "issue_id": "test_coverage::data/countries.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::data/welfare-standards.js::untested_module": {
+      "issue_id": "test_coverage::data/welfare-standards.js::untested_module",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_module",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/InterventionSimulator.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/InterventionSimulator.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/AISuite.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/AISuite.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/WelfareCharts.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/WelfareCharts.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::app/page.js::untested_critical": {
+      "issue_id": "test_coverage::app/page.js::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/GapAnalysis.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/GapAnalysis.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/WorldMap.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/WorldMap.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/SpeciesDetail.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/SpeciesDetail.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/SpeciesExplorer.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/SpeciesExplorer.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    },
+    "test_coverage::components/ReportPanel.jsx::untested_critical": {
+      "issue_id": "test_coverage::components/ReportPanel.jsx::untested_critical",
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "cluster": "auto/test_coverage-untested_critical",
+      "updated_at": "2026-04-12T07:58:12+00:00"
+    }
+  },
+  "clusters": {
+    "auto/unused": {
+      "name": "auto/unused",
+      "description": "Remove 12 unused issues",
+      "issue_ids": [
+        "unused::__tests__/components/AISuite.test.js::unused_import::10::React",
+        "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React",
+        "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React",
+        "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen",
+        "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React",
+        "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React",
+        "unused::__tests__/components/Sidebar.test.js::unused_import::8::React",
+        "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React",
+        "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React",
+        "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React",
+        "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React",
+        "unused::__tests__/components/WorldMap.test.js::unused_import::9::React"
+      ],
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "updated_at": "2026-04-12T07:58:12+00:00",
+      "auto": true,
+      "cluster_key": "auto::unused",
+      "action": "desloppify autofix unused-imports --dry-run",
+      "execution_status": "active",
+      "user_modified": false,
+      "action_type": "auto_fix",
+      "execution_policy": "ephemeral_autopromote"
+    },
+    "auto/test_coverage-untested_module": {
+      "name": "auto/test_coverage-untested_module",
+      "description": "Fix 15 test coverage issues",
+      "issue_ids": [
+        "test_coverage::app/api/countries/route.js::untested_module",
+        "test_coverage::app/api/welfare-gaps/route.js::untested_module",
+        "test_coverage::components/StatsOverview.jsx::untested_module",
+        "test_coverage::app/layout.js::untested_module",
+        "test_coverage::lib/report-generator.js::untested_module",
+        "test_coverage::lib/gap-scoring.js::untested_module",
+        "test_coverage::components/FilterPanel.jsx::untested_module",
+        "test_coverage::lib/species-utils.js::untested_module",
+        "test_coverage::components/Sidebar.jsx::untested_module",
+        "test_coverage::data/production-systems.js::untested_module",
+        "test_coverage::data/species.js::untested_module",
+        "test_coverage::app/api/species/route.js::untested_module",
+        "test_coverage::app/api/reports/route.js::untested_module",
+        "test_coverage::data/countries.js::untested_module",
+        "test_coverage::data/welfare-standards.js::untested_module"
+      ],
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "updated_at": "2026-04-12T07:58:12+00:00",
+      "auto": true,
+      "cluster_key": "detector::test_coverage::untested_module",
+      "action": "review test coverage gaps",
+      "execution_status": "review",
+      "user_modified": false,
+      "action_type": "refactor",
+      "execution_policy": "planned_only"
+    },
+    "auto/test_coverage-untested_critical": {
+      "name": "auto/test_coverage-untested_critical",
+      "description": "Fix 9 test coverage issues",
+      "issue_ids": [
+        "test_coverage::components/InterventionSimulator.jsx::untested_critical",
+        "test_coverage::components/AISuite.jsx::untested_critical",
+        "test_coverage::components/WelfareCharts.jsx::untested_critical",
+        "test_coverage::app/page.js::untested_critical",
+        "test_coverage::components/GapAnalysis.jsx::untested_critical",
+        "test_coverage::components/WorldMap.jsx::untested_critical",
+        "test_coverage::components/SpeciesDetail.jsx::untested_critical",
+        "test_coverage::components/SpeciesExplorer.jsx::untested_critical",
+        "test_coverage::components/ReportPanel.jsx::untested_critical"
+      ],
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "updated_at": "2026-04-12T07:58:12+00:00",
+      "auto": true,
+      "cluster_key": "detector::test_coverage::untested_critical",
+      "action": "review test coverage gaps",
+      "execution_status": "review",
+      "user_modified": false,
+      "action_type": "refactor",
+      "execution_policy": "planned_only"
+    },
+    "auto/stale-review": {
+      "name": "auto/stale-review",
+      "description": "Re-review 3 stale subjective dimensions",
+      "issue_ids": [
+        "subjective::abstraction_fitness",
+        "subjective::design_coherence",
+        "subjective::logic_clarity"
+      ],
+      "created_at": "2026-04-12T07:58:12+00:00",
+      "updated_at": "2026-04-12T07:58:12+00:00",
+      "auto": true,
+      "cluster_key": "subjective::stale",
+      "action": "desloppify review --prepare --dimensions abstraction_fitness,design_coherence,logic_clarity",
+      "execution_status": "review",
+      "user_modified": false,
+      "action_type": "manual_fix",
+      "execution_policy": "planned_only"
+    }
+  },
+  "superseded": {},
+  "promoted_ids": [],
+  "plan_start_scores": {},
+  "refresh_state": {
+    "_subjective_migration_pruned": true,
+    "lifecycle_phase": "plan",
+    "postflight_scan_completed_at_scan_count": 5
+  },
+  "execution_log": [
+    {
+      "timestamp": "2026-04-12T07:43:34+00:00",
+      "action": "sync_subjective",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:43:34+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:43:34+00:00",
+      "action": "sync_lifecycle_phase",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "phase": "review_initial"
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:43:34+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-04-12T07:44:19+00:00",
+      "action": "sync_subjective",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:44:19+00:00",
+      "action": "clear_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-04-12T07:44:19+00:00",
+      "action": "complete_postflight_scan",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "scan_count": 2
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "action": "sync_subjective",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "action": "sync_create_plan",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "injected": true
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "action": "complete_postflight_scan",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "scan_count": 4
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:38+00:00",
+      "action": "clear_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-04-12T07:58:38+00:00",
+      "action": "complete_postflight_scan",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "scan_count": 5
+      }
+    }
+  ],
+  "epic_triage_meta": {},
+  "commit_log": [],
+  "uncommitted_issues": [],
+  "commit_tracking_branch": null,
+  "scan_count_at_plan_start": 4
+}

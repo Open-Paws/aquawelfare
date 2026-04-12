@@ -1,0 +1,3668 @@
+{
+  "version": 3,
+  "created": "2026-04-12T07:43:33+00:00",
+  "last_scan": "2026-04-12T07:58:37+00:00",
+  "scan_count": 5,
+  "overall_score": 74.6,
+  "objective_score": 46.9,
+  "strict_score": 74.6,
+  "verified_strict_score": 46.9,
+  "stats": {
+    "total": 72,
+    "auto_resolved": 0,
+    "deferred": 0,
+    "false_positive": 0,
+    "fixed": 0,
+    "open": 72,
+    "triaged_out": 0,
+    "wontfix": 0,
+    "by_tier": {
+      "2": {
+        "auto_resolved": 0,
+        "deferred": 0,
+        "false_positive": 0,
+        "fixed": 0,
+        "open": 9,
+        "triaged_out": 0,
+        "wontfix": 0
+      },
+      "3": {
+        "auto_resolved": 0,
+        "deferred": 0,
+        "false_positive": 0,
+        "fixed": 0,
+        "open": 63,
+        "triaged_out": 0,
+        "wontfix": 0
+      }
+    }
+  },
+  "work_items": {
+    "structural::data/species.js": {
+      "id": "structural::data/species.js",
+      "detector": "structural",
+      "file": "data/species.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: large (799 LOC)",
+      "detail": {
+        "loc": 799
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::data/countries.js": {
+      "id": "structural::data/countries.js",
+      "detector": "structural",
+      "file": "data/countries.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: large (513 LOC)",
+      "detail": {
+        "loc": 513
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/InterventionSimulator.jsx": {
+      "id": "structural::components/InterventionSimulator.jsx",
+      "detector": "structural",
+      "file": "components/InterventionSimulator.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 616",
+      "detail": {
+        "complexity_score": 616,
+        "complexity_signals": [
+          "nesting depth 1",
+          "longest function 272 LOC",
+          "cyclomatic complexity 35",
+          "1 params",
+          "callback depth 2"
+        ],
+        "loc": 293
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/AISuite.jsx": {
+      "id": "structural::components/AISuite.jsx",
+      "detector": "structural",
+      "file": "components/AISuite.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 329",
+      "detail": {
+        "complexity_score": 329,
+        "complexity_signals": [
+          "nesting depth 9",
+          "longest function 184 LOC",
+          "cyclomatic complexity 16",
+          "1 params"
+        ],
+        "loc": 256
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::app/page.js": {
+      "id": "structural::app/page.js",
+      "detector": "structural",
+      "file": "app/page.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 322",
+      "detail": {
+        "complexity_score": 322,
+        "complexity_signals": [
+          "nesting depth 2",
+          "longest function 186 LOC",
+          "cyclomatic complexity 17",
+          "callback depth 2"
+        ],
+        "loc": 205
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/WorldMap.jsx": {
+      "id": "structural::components/WorldMap.jsx",
+      "detector": "structural",
+      "file": "components/WorldMap.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 285",
+      "detail": {
+        "complexity_score": 285,
+        "complexity_signals": [
+          "nesting depth 3",
+          "longest function 175 LOC",
+          "cyclomatic complexity 15",
+          "1 params",
+          "callback depth 2"
+        ],
+        "loc": 203
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/GapAnalysis.jsx": {
+      "id": "structural::components/GapAnalysis.jsx",
+      "detector": "structural",
+      "file": "components/GapAnalysis.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 273",
+      "detail": {
+        "complexity_score": 273,
+        "complexity_signals": [
+          "nesting depth 1",
+          "longest function 171 LOC",
+          "cyclomatic complexity 8",
+          "callback depth 2"
+        ],
+        "loc": 206
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/SpeciesExplorer.jsx": {
+      "id": "structural::components/SpeciesExplorer.jsx",
+      "detector": "structural",
+      "file": "components/SpeciesExplorer.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 239",
+      "detail": {
+        "complexity_score": 239,
+        "complexity_signals": [
+          "nesting depth 7",
+          "longest function 152 LOC",
+          "cyclomatic complexity 22",
+          "1 params",
+          "callback depth 2"
+        ],
+        "loc": 156
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/SpeciesDetail.jsx": {
+      "id": "structural::components/SpeciesDetail.jsx",
+      "detector": "structural",
+      "file": "components/SpeciesDetail.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 228",
+      "detail": {
+        "complexity_score": 228,
+        "complexity_signals": [
+          "nesting depth 1",
+          "longest function 156 LOC",
+          "cyclomatic complexity 10",
+          "1 params",
+          "callback depth 2"
+        ],
+        "loc": 160
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/WelfareCharts.jsx": {
+      "id": "structural::components/WelfareCharts.jsx",
+      "detector": "structural",
+      "file": "components/WelfareCharts.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 219",
+      "detail": {
+        "complexity_score": 219,
+        "complexity_signals": [
+          "nesting depth 1",
+          "longest function 153 LOC",
+          "cyclomatic complexity 13",
+          "callback depth 2"
+        ],
+        "loc": 183
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "structural::components/ReportPanel.jsx": {
+      "id": "structural::components/ReportPanel.jsx",
+      "detector": "structural",
+      "file": "components/ReportPanel.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Large file: complexity score 138",
+      "detail": {
+        "complexity_score": 138,
+        "complexity_signals": [
+          "nesting depth 2",
+          "longest function 126 LOC",
+          "cyclomatic complexity 9"
+        ],
+        "loc": 131
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:09+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/AISuite.test.js::unused_import::10::React": {
+      "id": "unused::__tests__/components/AISuite.test.js::unused_import::10::React",
+      "detector": "unused",
+      "file": "__tests__/components/AISuite.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/FilterPanel.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/FilterPanel.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/GapAnalysis.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/GapAnalysis.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen": {
+      "id": "unused::__tests__/components/GapAnalysis.test.js::unused_import::10::screen",
+      "detector": "unused",
+      "file": "__tests__/components/GapAnalysis.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: screen",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/InterventionSimulator.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/InterventionSimulator.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/ReportPanel.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/ReportPanel.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/Sidebar.test.js::unused_import::8::React": {
+      "id": "unused::__tests__/components/Sidebar.test.js::unused_import::8::React",
+      "detector": "unused",
+      "file": "__tests__/components/Sidebar.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/SpeciesDetail.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/SpeciesDetail.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React": {
+      "id": "unused::__tests__/components/SpeciesExplorer.test.js::unused_import::8::React",
+      "detector": "unused",
+      "file": "__tests__/components/SpeciesExplorer.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/StatsOverview.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/StatsOverview.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/WelfareCharts.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/WelfareCharts.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "unused::__tests__/components/WorldMap.test.js::unused_import::9::React": {
+      "id": "unused::__tests__/components/WorldMap.test.js::unused_import::9::React",
+      "detector": "unused",
+      "file": "__tests__/components/WorldMap.test.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Unused import: React",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "test",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "signature::app/api/countries/route.js::signature_variance::GET": {
+      "id": "signature::app/api/countries/route.js::signature_variance::GET",
+      "detector": "signature",
+      "file": "app/api/countries/route.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "'GET' has 2 different signatures across 4 files",
+      "detail": {},
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::data/species.js": {
+      "id": "orphaned::data/species.js",
+      "detector": "orphaned",
+      "file": "data/species.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (799 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 799
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::data/countries.js": {
+      "id": "orphaned::data/countries.js",
+      "detector": "orphaned",
+      "file": "data/countries.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (513 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 513
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/InterventionSimulator.jsx": {
+      "id": "orphaned::components/InterventionSimulator.jsx",
+      "detector": "orphaned",
+      "file": "components/InterventionSimulator.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (293 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 293
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/AISuite.jsx": {
+      "id": "orphaned::components/AISuite.jsx",
+      "detector": "orphaned",
+      "file": "components/AISuite.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (256 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 256
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::lib/report-generator.js": {
+      "id": "orphaned::lib/report-generator.js",
+      "detector": "orphaned",
+      "file": "lib/report-generator.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (233 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 233
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::data/welfare-standards.js": {
+      "id": "orphaned::data/welfare-standards.js",
+      "detector": "orphaned",
+      "file": "data/welfare-standards.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (211 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 211
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/GapAnalysis.jsx": {
+      "id": "orphaned::components/GapAnalysis.jsx",
+      "detector": "orphaned",
+      "file": "components/GapAnalysis.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (206 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 206
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/page.js": {
+      "id": "orphaned::app/page.js",
+      "detector": "orphaned",
+      "file": "app/page.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (205 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 205
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/WorldMap.jsx": {
+      "id": "orphaned::components/WorldMap.jsx",
+      "detector": "orphaned",
+      "file": "components/WorldMap.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (203 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 203
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/WelfareCharts.jsx": {
+      "id": "orphaned::components/WelfareCharts.jsx",
+      "detector": "orphaned",
+      "file": "components/WelfareCharts.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (183 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 183
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::lib/gap-scoring.js": {
+      "id": "orphaned::lib/gap-scoring.js",
+      "detector": "orphaned",
+      "file": "lib/gap-scoring.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (176 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 176
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/SpeciesDetail.jsx": {
+      "id": "orphaned::components/SpeciesDetail.jsx",
+      "detector": "orphaned",
+      "file": "components/SpeciesDetail.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (160 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 160
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/SpeciesExplorer.jsx": {
+      "id": "orphaned::components/SpeciesExplorer.jsx",
+      "detector": "orphaned",
+      "file": "components/SpeciesExplorer.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (156 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 156
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/ReportPanel.jsx": {
+      "id": "orphaned::components/ReportPanel.jsx",
+      "detector": "orphaned",
+      "file": "components/ReportPanel.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (131 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 131
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::data/production-systems.js": {
+      "id": "orphaned::data/production-systems.js",
+      "detector": "orphaned",
+      "file": "data/production-systems.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (118 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 118
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/FilterPanel.jsx": {
+      "id": "orphaned::components/FilterPanel.jsx",
+      "detector": "orphaned",
+      "file": "components/FilterPanel.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (68 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 68
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/api/species/route.js": {
+      "id": "orphaned::app/api/species/route.js",
+      "detector": "orphaned",
+      "file": "app/api/species/route.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (55 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 55
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/Sidebar.jsx": {
+      "id": "orphaned::components/Sidebar.jsx",
+      "detector": "orphaned",
+      "file": "components/Sidebar.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (49 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 49
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/api/countries/route.js": {
+      "id": "orphaned::app/api/countries/route.js",
+      "detector": "orphaned",
+      "file": "app/api/countries/route.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (47 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 47
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/api/welfare-gaps/route.js": {
+      "id": "orphaned::app/api/welfare-gaps/route.js",
+      "detector": "orphaned",
+      "file": "app/api/welfare-gaps/route.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (44 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 44
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/api/reports/route.js": {
+      "id": "orphaned::app/api/reports/route.js",
+      "detector": "orphaned",
+      "file": "app/api/reports/route.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (30 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 30
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::components/StatsOverview.jsx": {
+      "id": "orphaned::components/StatsOverview.jsx",
+      "detector": "orphaned",
+      "file": "components/StatsOverview.jsx",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (28 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 28
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::app/layout.js": {
+      "id": "orphaned::app/layout.js",
+      "detector": "orphaned",
+      "file": "app/layout.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (26 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 26
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "orphaned::lib/species-utils.js": {
+      "id": "orphaned::lib/species-utils.js",
+      "detector": "orphaned",
+      "file": "lib/species-utils.js",
+      "tier": 3,
+      "confidence": "medium",
+      "summary": "Orphaned file (12 LOC): zero importers, not an entry point",
+      "detail": {
+        "loc": 12
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/api/countries/route.js::untested_module": {
+      "id": "test_coverage::app/api/countries/route.js::untested_module",
+      "detector": "test_coverage",
+      "file": "app/api/countries/route.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (47 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 47,
+        "importer_count": 0,
+        "loc_weight": 6.855654600401044
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/api/welfare-gaps/route.js::untested_module": {
+      "id": "test_coverage::app/api/welfare-gaps/route.js::untested_module",
+      "detector": "test_coverage",
+      "file": "app/api/welfare-gaps/route.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (44 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 44,
+        "importer_count": 0,
+        "loc_weight": 6.6332495807108
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/StatsOverview.jsx::untested_module": {
+      "id": "test_coverage::components/StatsOverview.jsx::untested_module",
+      "detector": "test_coverage",
+      "file": "components/StatsOverview.jsx",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (28 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 28,
+        "importer_count": 0,
+        "loc_weight": 5.291502622129181
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/layout.js::untested_module": {
+      "id": "test_coverage::app/layout.js::untested_module",
+      "detector": "test_coverage",
+      "file": "app/layout.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (26 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 26,
+        "importer_count": 0,
+        "loc_weight": 5.0990195135927845
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::lib/report-generator.js::untested_module": {
+      "id": "test_coverage::lib/report-generator.js::untested_module",
+      "detector": "test_coverage",
+      "file": "lib/report-generator.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (233 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 233,
+        "importer_count": 0,
+        "loc_weight": 15.264337522473747
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/InterventionSimulator.jsx::untested_critical": {
+      "id": "test_coverage::components/InterventionSimulator.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/InterventionSimulator.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (293 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 293,
+        "importer_count": 0,
+        "loc_weight": 17.11724276862369,
+        "complexity_score": 616
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::lib/gap-scoring.js::untested_module": {
+      "id": "test_coverage::lib/gap-scoring.js::untested_module",
+      "detector": "test_coverage",
+      "file": "lib/gap-scoring.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (176 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 176,
+        "importer_count": 0,
+        "loc_weight": 13.2664991614216
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/FilterPanel.jsx::untested_module": {
+      "id": "test_coverage::components/FilterPanel.jsx::untested_module",
+      "detector": "test_coverage",
+      "file": "components/FilterPanel.jsx",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (68 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 68,
+        "importer_count": 0,
+        "loc_weight": 8.246211251235321
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/AISuite.jsx::untested_critical": {
+      "id": "test_coverage::components/AISuite.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/AISuite.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (256 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 256,
+        "importer_count": 0,
+        "loc_weight": 16.0,
+        "complexity_score": 329
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::lib/species-utils.js::untested_module": {
+      "id": "test_coverage::lib/species-utils.js::untested_module",
+      "detector": "test_coverage",
+      "file": "lib/species-utils.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (12 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 12,
+        "importer_count": 0,
+        "loc_weight": 3.4641016151377544
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/WelfareCharts.jsx::untested_critical": {
+      "id": "test_coverage::components/WelfareCharts.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/WelfareCharts.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (183 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 183,
+        "importer_count": 0,
+        "loc_weight": 13.527749258468683,
+        "complexity_score": 219
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/Sidebar.jsx::untested_module": {
+      "id": "test_coverage::components/Sidebar.jsx::untested_module",
+      "detector": "test_coverage",
+      "file": "components/Sidebar.jsx",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (49 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 49,
+        "importer_count": 0,
+        "loc_weight": 7.0
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::data/production-systems.js::untested_module": {
+      "id": "test_coverage::data/production-systems.js::untested_module",
+      "detector": "test_coverage",
+      "file": "data/production-systems.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (118 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 118,
+        "importer_count": 0,
+        "loc_weight": 10.862780491200215
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::data/species.js::untested_module": {
+      "id": "test_coverage::data/species.js::untested_module",
+      "detector": "test_coverage",
+      "file": "data/species.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (799 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 799,
+        "importer_count": 0,
+        "loc_weight": 28.26658805020514
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/page.js::untested_critical": {
+      "id": "test_coverage::app/page.js::untested_critical",
+      "detector": "test_coverage",
+      "file": "app/page.js",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (205 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 205,
+        "importer_count": 0,
+        "loc_weight": 14.317821063276353,
+        "complexity_score": 322
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/GapAnalysis.jsx::untested_critical": {
+      "id": "test_coverage::components/GapAnalysis.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/GapAnalysis.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (206 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 206,
+        "importer_count": 0,
+        "loc_weight": 14.352700094407323,
+        "complexity_score": 273
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/api/species/route.js::untested_module": {
+      "id": "test_coverage::app/api/species/route.js::untested_module",
+      "detector": "test_coverage",
+      "file": "app/api/species/route.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (55 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 55,
+        "importer_count": 0,
+        "loc_weight": 7.416198487095663
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/WorldMap.jsx::untested_critical": {
+      "id": "test_coverage::components/WorldMap.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/WorldMap.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (203 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 203,
+        "importer_count": 0,
+        "loc_weight": 14.247806848775006,
+        "complexity_score": 285
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/SpeciesDetail.jsx::untested_critical": {
+      "id": "test_coverage::components/SpeciesDetail.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/SpeciesDetail.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (160 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 160,
+        "importer_count": 0,
+        "loc_weight": 12.649110640673518,
+        "complexity_score": 228
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/SpeciesExplorer.jsx::untested_critical": {
+      "id": "test_coverage::components/SpeciesExplorer.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/SpeciesExplorer.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (156 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 156,
+        "importer_count": 0,
+        "loc_weight": 12.489995996796797,
+        "complexity_score": 239
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::app/api/reports/route.js::untested_module": {
+      "id": "test_coverage::app/api/reports/route.js::untested_module",
+      "detector": "test_coverage",
+      "file": "app/api/reports/route.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (30 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 30,
+        "importer_count": 0,
+        "loc_weight": 5.477225575051661
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::components/ReportPanel.jsx::untested_critical": {
+      "id": "test_coverage::components/ReportPanel.jsx::untested_critical",
+      "detector": "test_coverage",
+      "file": "components/ReportPanel.jsx",
+      "tier": 2,
+      "confidence": "high",
+      "summary": "Untested critical module (131 LOC, 0 importers) \u2014 high blast radius",
+      "detail": {
+        "kind": "untested_critical",
+        "loc": 131,
+        "importer_count": 0,
+        "loc_weight": 11.445523142259598,
+        "complexity_score": 138
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::data/countries.js::untested_module": {
+      "id": "test_coverage::data/countries.js::untested_module",
+      "detector": "test_coverage",
+      "file": "data/countries.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (513 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 513,
+        "importer_count": 0,
+        "loc_weight": 22.64950330581225
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    },
+    "test_coverage::data/welfare-standards.js::untested_module": {
+      "id": "test_coverage::data/welfare-standards.js::untested_module",
+      "detector": "test_coverage",
+      "file": "data/welfare-standards.js",
+      "tier": 3,
+      "confidence": "high",
+      "summary": "Untested module (211 LOC, 0 importers)",
+      "detail": {
+        "kind": "untested_module",
+        "loc": 211,
+        "importer_count": 0,
+        "loc_weight": 14.52583904633395
+      },
+      "status": "open",
+      "note": null,
+      "first_seen": "2026-04-12T07:58:12+00:00",
+      "last_seen": "2026-04-12T07:58:37+00:00",
+      "resolved_at": null,
+      "reopen_count": 0,
+      "work_item_kind": "mechanical_defect",
+      "issue_kind": "mechanical_defect",
+      "origin": "scan",
+      "lang": "javascript",
+      "zone": "production",
+      "suppressed": false,
+      "suppressed_at": null,
+      "suppression_pattern": null
+    }
+  },
+  "scan_coverage": {
+    "javascript": {
+      "status": "reduced",
+      "confidence": 0.0,
+      "detectors": {
+        "eslint_warning": {
+          "detector": "eslint_warning",
+          "status": "reduced",
+          "confidence": 0.0,
+          "summary": "ESLint tooling unavailable (parser_error)",
+          "impact": "Detector results may be under-reported for this scan.",
+          "remediation": "Install/fix the tool command and rerun scan.",
+          "tool": "ESLint",
+          "reason": "parser_error"
+        },
+        "security": {
+          "detector": "security",
+          "status": "full",
+          "confidence": 1.0,
+          "summary": "Security coverage complete for enabled detectors.",
+          "impact": "",
+          "remediation": "",
+          "tool": "",
+          "reason": ""
+        }
+      },
+      "warnings": [
+        {
+          "detector": "eslint_warning",
+          "status": "reduced",
+          "confidence": 0.0,
+          "summary": "ESLint tooling unavailable (parser_error)",
+          "impact": "Detector results may be under-reported for this scan.",
+          "remediation": "Install/fix the tool command and rerun scan.",
+          "tool": "ESLint",
+          "reason": "parser_error"
+        }
+      ],
+      "updated_at": "2026-04-12T07:58:37+00:00"
+    }
+  },
+  "score_confidence": {
+    "status": "reduced",
+    "confidence": 0.0,
+    "detectors": [
+      {
+        "detector": "eslint_warning",
+        "status": "reduced",
+        "confidence": 0.0,
+        "summary": "ESLint tooling unavailable (parser_error)",
+        "impact": "Detector results may be under-reported for this scan.",
+        "remediation": "Install/fix the tool command and rerun scan.",
+        "tool": "ESLint",
+        "reason": "parser_error"
+      }
+    ],
+    "dimensions": []
+  },
+  "scan_metadata": {
+    "source": "scan"
+  },
+  "subjective_integrity": {
+    "status": "disabled",
+    "target_score": 85.0,
+    "matched_count": 0,
+    "matched_dimensions": [],
+    "reset_dimensions": []
+  },
+  "subjective_assessments": {
+    "naming_quality": {
+      "score": 88.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "logic_clarity": {
+      "score": 87.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4,
+      "needs_review_refresh": true,
+      "refresh_reason": "mechanical_issues_changed",
+      "stale_since": "2026-04-12T07:58:12+00:00"
+    },
+    "type_safety": {
+      "score": 72.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "contract_coherence": {
+      "score": 83.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "error_consistency": {
+      "score": 82.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "abstraction_fitness": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4,
+      "needs_review_refresh": true,
+      "refresh_reason": "mechanical_issues_changed",
+      "stale_since": "2026-04-12T07:58:12+00:00"
+    },
+    "ai_generated_debt": {
+      "score": 83.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "high_level_elegance": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "mid_level_elegance": {
+      "score": 84.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "low_level_elegance": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "cross_module_architecture": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "initialization_coupling": {
+      "score": 88.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "convention_outlier": {
+      "score": 86.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "dependency_health": {
+      "score": 87.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "test_strategy": {
+      "score": 82.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "api_surface_coherence": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "authorization_consistency": {
+      "score": 82.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "incomplete_migration": {
+      "score": 92.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "package_organization": {
+      "score": 87.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "design_coherence": {
+      "score": 86.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4,
+      "needs_review_refresh": true,
+      "refresh_reason": "mechanical_issues_changed",
+      "stale_since": "2026-04-12T07:58:12+00:00"
+    },
+    "advocacy_language_quality": {
+      "score": 88.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "advocacy_security_posture": {
+      "score": 82.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "advocacy_terminology_consistency": {
+      "score": 87.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "advocacy_data_sovereignty": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "advocacy_ux_inclusivity": {
+      "score": 85.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    },
+    "advocacy_tool_integration": {
+      "score": 83.0,
+      "source": "manual_override",
+      "assessed_at": "2026-04-12T07:57:48+00:00",
+      "provisional_override": true,
+      "provisional_until_scan": 4
+    }
+  },
+  "scan_history": [
+    {
+      "timestamp": "2026-04-12T07:43:34+00:00",
+      "lang": "javascript",
+      "strict_score": 25.0,
+      "verified_strict_score": 100.0,
+      "objective_score": 100.0,
+      "overall_score": 25.0,
+      "open": 0,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 0,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "pass",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "reduced",
+        "confidence": 0.0,
+        "detector_count": 1,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Data sovereignty": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy language": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy security": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy terms": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy tools": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy UX": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "AI generated debt": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "API coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Auth consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Contracts": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Convention drift": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Cross-module arch": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Dep health": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Design coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Error consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "High elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Stale migration": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Init coupling": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Logic clarity": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Low elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Mid elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Naming quality": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Structure nav": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Test strategy": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Type safety": {
+          "score": 0.0,
+          "strict": 0.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:44:19+00:00",
+      "lang": "javascript",
+      "strict_score": 25.0,
+      "verified_strict_score": 100.0,
+      "objective_score": 100.0,
+      "overall_score": 25.0,
+      "open": 0,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 0,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "pass",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "reduced",
+        "confidence": 0.0,
+        "detector_count": 1,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Data sovereignty": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy language": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy security": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy terms": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy tools": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy UX": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "AI generated debt": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "API coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Auth consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Contracts": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Convention drift": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Cross-module arch": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Dep health": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Design coherence": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Error consistency": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "High elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Stale migration": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Init coupling": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Logic clarity": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Low elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Mid elegance": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Naming quality": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Structure nav": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Test strategy": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Type safety": {
+          "score": 0.0,
+          "strict": 0.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:57:48+00:00",
+      "lang": "javascript",
+      "strict_score": 87.9,
+      "verified_strict_score": 100.0,
+      "objective_score": 100.0,
+      "overall_score": 87.9,
+      "open": 0,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 0,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": null
+      },
+      "score_confidence": {
+        "status": "reduced",
+        "confidence": 0.0,
+        "detector_count": 1,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Advocacy language": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Advocacy security": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Advocacy terms": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Advocacy tools": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Advocacy UX": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "AI generated debt": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "API coherence": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Auth consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Contracts": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Convention drift": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Cross-module arch": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Dep health": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Design coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Error consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "High elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Stale migration": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Init coupling": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Mid elegance": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Naming quality": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Structure nav": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Test strategy": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Type safety": {
+          "score": 72.0,
+          "strict": 72.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:12+00:00",
+      "lang": "javascript",
+      "strict_score": 74.6,
+      "verified_strict_score": 46.9,
+      "objective_score": 46.9,
+      "overall_score": 74.6,
+      "open": 72,
+      "diff_new": 72,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 72,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "reduced",
+        "confidence": 0.0,
+        "detector_count": 1,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 82.3,
+          "strict": 82.3
+        },
+        "Security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "File health": {
+          "score": 67.9,
+          "strict": 67.9
+        },
+        "Test health": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Advocacy language": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Advocacy terminology": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Advocacy tools": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Advocacy UX": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "AI generated debt": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "API coherence": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Auth consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Contracts": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Convention drift": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Cross-module arch": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Dep health": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Design coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Error consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "High elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Stale migration": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Init coupling": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Mid elegance": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Naming quality": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Structure nav": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Test strategy": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Type safety": {
+          "score": 72.0,
+          "strict": 72.0
+        }
+      }
+    },
+    {
+      "timestamp": "2026-04-12T07:58:37+00:00",
+      "lang": "javascript",
+      "strict_score": 74.6,
+      "verified_strict_score": 46.9,
+      "objective_score": 46.9,
+      "overall_score": 74.6,
+      "open": 72,
+      "diff_new": 0,
+      "diff_resolved": 0,
+      "ignored": 0,
+      "raw_issues": 72,
+      "suppressed_pct": 0.0,
+      "ignore_patterns": 0,
+      "subjective_integrity": {
+        "status": "disabled",
+        "matched_count": 0,
+        "reset_count": 0,
+        "target_score": 85.0
+      },
+      "score_confidence": {
+        "status": "reduced",
+        "confidence": 0.0,
+        "detector_count": 1,
+        "dimension_count": 0
+      },
+      "dimension_scores": {
+        "Code quality": {
+          "score": 82.3,
+          "strict": 82.3
+        },
+        "Security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "File health": {
+          "score": 67.9,
+          "strict": 67.9
+        },
+        "Test health": {
+          "score": 0.0,
+          "strict": 0.0
+        },
+        "Advocacy security": {
+          "score": 100.0,
+          "strict": 100.0
+        },
+        "Abstraction fit": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Data sovereignty": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Advocacy language": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Advocacy security (subjective)": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Advocacy terminology": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Advocacy tools": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Advocacy UX": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "AI generated debt": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "API coherence": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Auth consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Contracts": {
+          "score": 83.0,
+          "strict": 83.0
+        },
+        "Convention drift": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Cross-module arch": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Dep health": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Design coherence": {
+          "score": 86.0,
+          "strict": 86.0
+        },
+        "Error consistency": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "High elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Stale migration": {
+          "score": 92.0,
+          "strict": 92.0
+        },
+        "Init coupling": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Logic clarity": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Low elegance": {
+          "score": 85.0,
+          "strict": 85.0
+        },
+        "Mid elegance": {
+          "score": 84.0,
+          "strict": 84.0
+        },
+        "Naming quality": {
+          "score": 88.0,
+          "strict": 88.0
+        },
+        "Structure nav": {
+          "score": 87.0,
+          "strict": 87.0
+        },
+        "Test strategy": {
+          "score": 82.0,
+          "strict": 82.0
+        },
+        "Type safety": {
+          "score": 72.0,
+          "strict": 72.0
+        }
+      }
+    }
+  ],
+  "review_cache": {
+    "detectors": {
+      "security": {
+        "version": 1,
+        "fingerprint": "f2d5c802ae81e20bc8fb41b19960203689091a67",
+        "entries": [],
+        "files_scanned": 0,
+        "coverage": null
+      }
+    },
+    "files": {},
+    "holistic": {
+      "reviewed_at": "2026-04-12T07:57:48+00:00",
+      "file_count_at_review": 0,
+      "issue_count": 0
+    }
+  },
+  "lang_capabilities": {
+    "javascript": {
+      "fixers": [
+        "eslint-warning"
+      ],
+      "typecheck_cmd": ""
+    }
+  },
+  "zone_distribution": {
+    "test": 28,
+    "production": 24,
+    "config": 3
+  },
+  "tool_hash": "141ace7b12db",
+  "scan_path": ".",
+  "scan_completeness": {
+    "javascript": "fast"
+  },
+  "potentials": {
+    "javascript": {
+      "structural": 24,
+      "flat_dirs": 16,
+      "nextjs": 55,
+      "unused_imports": 12,
+      "signature": 1,
+      "security": 24,
+      "single_use": 0,
+      "cycles": 24,
+      "orphaned": 24,
+      "test_coverage": 286,
+      "advocacy_language": 0,
+      "advocacy_security": 23,
+      "stale_wontfix": 0
+    }
+  },
+  "codebase_metrics": {
+    "javascript": {
+      "total_files": 55,
+      "total_loc": 7305,
+      "total_directories": 15
+    }
+  },
+  "dimension_scores": {
+    "Code quality": {
+      "score": 82.3,
+      "strict": 82.3,
+      "verified_strict_score": 82.3,
+      "checks": 95,
+      "failing": 24,
+      "tier": 3,
+      "detectors": {
+        "orphaned": {
+          "potential": 24,
+          "pass_rate": 0.30000000000000027,
+          "failing": 24,
+          "weighted_failures": 16.799999999999994
+        },
+        "flat_dirs": {
+          "potential": 16,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        },
+        "nextjs": {
+          "potential": 55,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        }
+      }
+    },
+    "Security": {
+      "score": 100.0,
+      "strict": 100.0,
+      "verified_strict_score": 100.0,
+      "checks": 48,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "cycles": {
+          "potential": 24,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        },
+        "security": {
+          "potential": 24,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        }
+      }
+    },
+    "File health": {
+      "score": 67.9,
+      "strict": 67.9,
+      "verified_strict_score": 67.9,
+      "checks": 24,
+      "failing": 11,
+      "tier": 3,
+      "detectors": {
+        "structural": {
+          "potential": 24,
+          "pass_rate": 0.6791666666666666,
+          "failing": 11,
+          "weighted_failures": 7.700000000000001
+        }
+      }
+    },
+    "Test health": {
+      "score": 0.0,
+      "strict": 0.0,
+      "verified_strict_score": 0.0,
+      "checks": 286,
+      "failing": 24,
+      "tier": 4,
+      "detectors": {
+        "test_coverage": {
+          "potential": 286,
+          "pass_rate": 0.0,
+          "failing": 24,
+          "weighted_failures": 286.46666063608205
+        }
+      }
+    },
+    "Advocacy security": {
+      "score": 100.0,
+      "strict": 100.0,
+      "verified_strict_score": 100.0,
+      "checks": 23,
+      "failing": 0,
+      "tier": 2,
+      "detectors": {
+        "advocacy_security": {
+          "potential": 23,
+          "pass_rate": 1.0,
+          "failing": 0,
+          "weighted_failures": 0.0
+        }
+      }
+    },
+    "Abstraction fit": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "abstraction_fitness",
+          "configured_weight": 8.0,
+          "components": []
+        }
+      }
+    },
+    "Data sovereignty": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_data_sovereignty",
+          "configured_weight": 6.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy language": {
+      "score": 88.0,
+      "strict": 88.0,
+      "verified_strict_score": 88.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.88,
+          "failing": 0,
+          "weighted_failures": 1.2,
+          "assessment_score": 88.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_language_quality",
+          "configured_weight": 8.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy security (subjective)": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_security_posture",
+          "configured_weight": 10.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy terminology": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_terminology_consistency",
+          "configured_weight": 4.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy tools": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_tool_integration",
+          "configured_weight": 3.0,
+          "components": []
+        }
+      }
+    },
+    "Advocacy UX": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "advocacy_ux_inclusivity",
+          "configured_weight": 4.0,
+          "components": []
+        }
+      }
+    },
+    "AI generated debt": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "ai_generated_debt",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "API coherence": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "api_surface_coherence",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Auth consistency": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "authorization_consistency",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Contracts": {
+      "score": 83.0,
+      "strict": 83.0,
+      "verified_strict_score": 83.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.83,
+          "failing": 0,
+          "weighted_failures": 1.7,
+          "assessment_score": 83.0,
+          "placeholder": false,
+          "dimension_key": "contract_coherence",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    },
+    "Convention drift": {
+      "score": 86.0,
+      "strict": 86.0,
+      "verified_strict_score": 86.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.86,
+          "failing": 0,
+          "weighted_failures": 1.4,
+          "assessment_score": 86.0,
+          "placeholder": false,
+          "dimension_key": "convention_outlier",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Cross-module arch": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "cross_module_architecture",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Dep health": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "dependency_health",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Design coherence": {
+      "score": 86.0,
+      "strict": 86.0,
+      "verified_strict_score": 86.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.86,
+          "failing": 0,
+          "weighted_failures": 1.4,
+          "assessment_score": 86.0,
+          "placeholder": false,
+          "dimension_key": "design_coherence",
+          "configured_weight": 10.0,
+          "components": []
+        }
+      }
+    },
+    "Error consistency": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "error_consistency",
+          "configured_weight": 3.0,
+          "components": []
+        }
+      }
+    },
+    "High elegance": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "high_level_elegance",
+          "configured_weight": 22.0,
+          "components": []
+        }
+      }
+    },
+    "Stale migration": {
+      "score": 92.0,
+      "strict": 92.0,
+      "verified_strict_score": 92.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.92,
+          "failing": 0,
+          "weighted_failures": 0.8,
+          "assessment_score": 92.0,
+          "placeholder": false,
+          "dimension_key": "incomplete_migration",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Init coupling": {
+      "score": 88.0,
+      "strict": 88.0,
+      "verified_strict_score": 88.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.88,
+          "failing": 0,
+          "weighted_failures": 1.2,
+          "assessment_score": 88.0,
+          "placeholder": false,
+          "dimension_key": "initialization_coupling",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Logic clarity": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "logic_clarity",
+          "configured_weight": 6.0,
+          "components": []
+        }
+      }
+    },
+    "Low elegance": {
+      "score": 85.0,
+      "strict": 85.0,
+      "verified_strict_score": 85.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.85,
+          "failing": 0,
+          "weighted_failures": 1.5,
+          "assessment_score": 85.0,
+          "placeholder": false,
+          "dimension_key": "low_level_elegance",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    },
+    "Mid elegance": {
+      "score": 84.0,
+      "strict": 84.0,
+      "verified_strict_score": 84.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.84,
+          "failing": 0,
+          "weighted_failures": 1.6,
+          "assessment_score": 84.0,
+          "placeholder": false,
+          "dimension_key": "mid_level_elegance",
+          "configured_weight": 22.0,
+          "components": []
+        }
+      }
+    },
+    "Naming quality": {
+      "score": 88.0,
+      "strict": 88.0,
+      "verified_strict_score": 88.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.88,
+          "failing": 0,
+          "weighted_failures": 1.2,
+          "assessment_score": 88.0,
+          "placeholder": false,
+          "dimension_key": "naming_quality",
+          "configured_weight": 2.0,
+          "components": []
+        }
+      }
+    },
+    "Structure nav": {
+      "score": 87.0,
+      "strict": 87.0,
+      "verified_strict_score": 87.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.87,
+          "failing": 0,
+          "weighted_failures": 1.3,
+          "assessment_score": 87.0,
+          "placeholder": false,
+          "dimension_key": "package_organization",
+          "configured_weight": 5.0,
+          "components": []
+        }
+      }
+    },
+    "Test strategy": {
+      "score": 82.0,
+      "strict": 82.0,
+      "verified_strict_score": 82.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.82,
+          "failing": 0,
+          "weighted_failures": 1.8,
+          "assessment_score": 82.0,
+          "placeholder": false,
+          "dimension_key": "test_strategy",
+          "configured_weight": 1.0,
+          "components": []
+        }
+      }
+    },
+    "Type safety": {
+      "score": 72.0,
+      "strict": 72.0,
+      "verified_strict_score": 72.0,
+      "checks": 10,
+      "failing": 0,
+      "tier": 4,
+      "detectors": {
+        "subjective_assessment": {
+          "potential": 10,
+          "pass_rate": 0.72,
+          "failing": 0,
+          "weighted_failures": 2.8,
+          "assessment_score": 72.0,
+          "placeholder": false,
+          "dimension_key": "type_safety",
+          "configured_weight": 12.0,
+          "components": []
+        }
+      }
+    }
+  },
+  "reminder_history": {
+    "report_scores": 4,
+    "feedback_nudge": 3,
+    "zone_classification": 2
+  },
+  "assessment_import_audit": [
+    {
+      "timestamp": "2026-04-12T07:57:48+00:00",
+      "mode": "manual_override",
+      "trusted": false,
+      "reason": "manual override attested by operator",
+      "override_used": true,
+      "attested_external": false,
+      "provisional": true,
+      "provisional_count": 26,
+      "attest": "AI holistic review: read all source files and scored 26 dimensions",
+      "import_file": ".desloppify/scores.json",
+      "packet_sha256": ""
+    }
+  ]
+}
