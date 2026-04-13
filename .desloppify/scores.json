@@ -1,0 +1,42 @@
+{
+  "assessments": {
+    "naming_quality": 88.0,
+    "logic_clarity": 87.0,
+    "type_safety": 72.0,
+    "contract_coherence": 83.0,
+    "error_consistency": 82.0,
+    "abstraction_fitness": 85.0,
+    "ai_generated_debt": 83.0,
+    "high_level_elegance": 85.0,
+    "mid_level_elegance": 84.0,
+    "low_level_elegance": 85.0,
+    "cross_module_architecture": 85.0,
+    "initialization_coupling": 88.0,
+    "convention_outlier": 86.0,
+    "dependency_health": 87.0,
+    "test_strategy": 82.0,
+    "api_surface_coherence": 85.0,
+    "authorization_consistency": 82.0,
+    "incomplete_migration": 92.0,
+    "package_organization": 87.0,
+    "design_coherence": 86.0,
+    "advocacy_language_quality": 88.0,
+    "advocacy_security_posture": 82.0,
+    "advocacy_terminology_consistency": 87.0,
+    "advocacy_data_sovereignty": 85.0,
+    "advocacy_ux_inclusivity": 85.0,
+    "advocacy_tool_integration": 83.0
+  },
+  "issues": [],
+  "dimension_notes": {
+    "type_safety": "Project is JavaScript (.js/.jsx), not TypeScript. No static typing anywhere in the runtime code. This is a principled gap — would need a migration to TS to address. Scores 72 because the pattern is consistent (JS throughout) rather than mixed.",
+    "test_strategy": "25+ test files covering components, lib functions, API routes, and data integrity. Tests are parameterized and cover real domain logic (gap-scoring, report-generator). Mocks for external dependencies (leaflet, recharts) are properly set up. Scores well for JS project.",
+    "high_level_elegance": "Clean separation: data layer (data/), pure functions (lib/), API routes (app/api/), React components. The gap-scoring algorithm is properly isolated as a pure function with documented weights. Dynamic import for WorldMap (leaflet SSR) shows architectural awareness.",
+    "low_level_elegance": "gap-scoring.js uses named constants for all magic numbers (FEASIBILITY_BASELINE, FEASIBILITY_FISH_BONUS, etc.) — good practice. Components make appropriate use of useMemo for expensive computations.",
+    "advocacy_language_quality": "Domain terminology is consistent — farmed aquatic animals, welfare gap, slaughterhouse used precisely. The AISuite component's terminology analysis correctly classifies welfare language strength. Species data uses scientific names and sourced production figures.",
+    "advocacy_ux_inclusivity": "The intervention simulator and report generator make findings accessible across detail levels. Progressive disclosure in SpeciesDetail. However, no internationalization, no offline mode, and no explicit low-bandwidth optimization.",
+    "advocacy_data_sovereignty": "All data is static/local (species.js, countries.js). No external data calls from the client beyond API routes. Clean data sovereignty posture for a research tool."
+  },
+  "dimension_judgment": {},
+  "context_updates": {}
+}
