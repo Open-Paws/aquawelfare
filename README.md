@@ -1,5 +1,7 @@
 # 🌊 Aquatic Animal Welfare Tracker
 
+[![desloppify score](https://img.shields.io/badge/desloppify-77.6%2F100-green)](scorecard.png)
+
 **A next-generation, data-driven advocacy platform and strategic intelligence dashboard.**
 
 The Aquatic Animal Welfare Tracker is a full-stack Next.js web application designed to empower NGOs, policymakers, and researchers. By aggregating global aquaculture production data, analyzing legislative strictness, and deploying simulated AI/ML forecasting models, this platform transforms raw statistics into actionable, compelling campaigns to protect billions of farmed aquatic animals globally.
@@ -92,6 +94,10 @@ Approximately **100+ Billion** farmed fishes and **400+ Billion** farmed crustac
 This tracking application solves the massive data-visibility problem for campaigners. By consolidating production volumes, certification coverages, and political gaps into one visceral, interactive dashboard, organizations can easily decide **where** and **how** to intervene to maximize the number of lives shielded.
 
 ---
+
+## Code Quality
+
+<img src="scorecard.png" width="100%">
 
 ## 📝 License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
